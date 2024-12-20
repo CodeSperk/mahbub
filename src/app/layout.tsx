@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavItems from "@/components/NavItems";
+import ClientWrapper from "@/components/clientWrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,21 +24,27 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="relative">
+       
 
-            <div className="fixed h-[100vh] top-[90vh] left-1/2 -translate-x-1/2">
-            <NavItems/>
+
+          {/* Content */}
+          <ClientWrapper>
+          <div className="relative z-10">
+            <div className="fixed h-[100vh] top-0 left-1/2 z-50 -translate-x-1/2">
+              <NavItems />
             </div>
+
+            <main>{children}</main>
+          </div>
+          </ClientWrapper>
          
-          <main>
-          {children}
-          </main>
-        </div>
+
       </body>
     </html>
   );

@@ -1,6 +1,7 @@
 "use client"
 import { usePathname, useRouter } from "next/navigation"
 import { animatePageOut } from "@/utils/animation"
+import { useState } from "react"
 
 interface Props{
   href: string
@@ -8,6 +9,7 @@ interface Props{
 }
 
 const RoutPages = ({href, label} : Props) => {
+  
   const router = useRouter();
   const pathName = usePathname();
   console.log(router, pathName);
@@ -17,8 +19,10 @@ const RoutPages = ({href, label} : Props) => {
       animatePageOut(href, router)
     }
   }
+
+  const isActive = pathName === href;
   return(
-    <button className="text-xl text-neutral-900 hover:text-neutral-700" onClick={handleClick}>
+    <button className={`text-xl   ${isActive ? "text-[#FFB400] font-bold" : "text-[#fefef5] hover:text-[#FFB400]"}`} onClick={handleClick}>
       {label}
     </button>
   )
