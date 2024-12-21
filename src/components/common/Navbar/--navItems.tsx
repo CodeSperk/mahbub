@@ -1,16 +1,15 @@
-"use client"
-import RoutPages from "./routes";
+import RoutPages from "../../shared/Routes";
 
-const Sidebar = () => {
+const NavItems = () => {
   return (
-    <nav className="flex gap-6 text-white py-4 px-8 rounded-full">
+    <ul className="flex gap-6 text-white py-4 px-8 rounded-full">
         <RoutPages href="/" label="Home"/>
         <RoutPages href="/about" label="About"/>
         <RoutPages href="/portfolio" label="Portfolio"/>
         <RoutPages href="/blog" label="Blog"/>
         <RoutPages href="/contact" label="Contact"/>
-  </nav>
+    </ul>
   );
 };
 
-export default Sidebar;
+export default NavItems;

@@ -10,8 +10,9 @@ interface AnimatedTextProps {
 
 const AnimatedText: React.FC<AnimatedTextProps> = ({
   texts = [
-    'Frontend (React/Next.js)',
-    'Backend (Node/Express.js)',
+    'Frontend (JS/TS)',
+    'Frontend (React/Next)',
+    'Backend (Node/Express)',
     'Database (MongoDB, PostgreSQL)'
   ],
   interval = 4000,

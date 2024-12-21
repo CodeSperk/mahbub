@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import LoadingScreen from "./Loader/LoadingScreen";
+import LoadingScreen from "./LoadingScreen";
 
 export default function ClientWrapper({
   children,

@@ -1,7 +1,6 @@
 "use client"
 import { usePathname, useRouter } from "next/navigation"
 import { animatePageOut } from "@/utils/animation"
-import { useState } from "react"
 
 interface Props{
   href: string
@@ -9,7 +8,6 @@ interface Props{
 }
 
 const RoutPages = ({href, label} : Props) => {
-  
   const router = useRouter();
   const pathName = usePathname();
   console.log(router, pathName);

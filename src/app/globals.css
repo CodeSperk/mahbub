@@ -18,3 +18,6 @@ body{
 .text-primary{
   @apply text-[#FFB400]
 }
+.page-bg{
+  @apply bg-gradient-to-r from-[#0F050E] via-[#13040b] to-[#0F050E] 
+}
