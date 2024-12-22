@@ -10,14 +10,13 @@ interface AnimatedTextProps {
 
 const AnimatedText: React.FC<AnimatedTextProps> = ({
   texts = [
-    'Frontend (JS/TS)',
-    'Frontend (React/Next)',
-    'Backend (Node/Express)',
+    'Frontend (JavaScript/Typescript)',
+    'Frontend (React/Next.js)',
+    'Backend (Node/Express.js)',
     'Database (MongoDB, PostgreSQL)'
   ],
   interval = 4000,
   fadeTime = 1000,
-  className = ''
 }) => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [isVisible, setIsVisible] = useState<boolean>(true);
@@ -36,19 +35,17 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({
   }, [texts, interval, fadeTime])
 
   return (
-    <div className={`min-h-[60px] flex items-center justify-center ${className}`}>
-      <h1> Currently specializing in {" "} 
+       <h5> Currently specializing in {" "}  <br className="lg:hidden"/>
         <span className={`
             text-primary
+            font-bold
             transition-opacity duration-500
             ${isVisible ? 'opacity-100' : 'opacity-0'}
           `}>
           {texts[currentIndex]}
         </span>
-      </h1>
-      
-    </div>
-  );
+      </h5>
+    );
 };
 
 export default AnimatedText;

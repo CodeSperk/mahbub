@@ -9,7 +9,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
   },[])
 
   return (
-    <div >
+    <div>
       <div className="hidden md:block">
         <AnimateBG id="banner-1" className="left-0"/>
         <AnimateBG id="banner-2" className="left-1/3"/>
