@@ -23,3 +23,7 @@ body{
 .page-bg{
   @apply bg-gradient-to-r from-[#0F050E] via-[#13040b] to-[#0F050E] 
 }
+
+.section-gap{
+  @apply mt-12 md:mt-20 lg:mt-28
+}

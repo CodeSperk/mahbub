@@ -1,14 +1,14 @@
 import { FaCss3Alt, FaHtml5, FaReact, FaShopify } from "react-icons/fa";
-import TeactStackIcons from "./_TeactStackIcons";
-import { IoLogoJavascript, IoLogoNodejs } from "react-icons/io";
-import { SiExpress, SiMongodb, SiMui, SiTailwindcss, SiTypescript } from "react-icons/si";
-import { TbBrandJavascript, TbBrandTypescript, TbSql } from "react-icons/tb";
+import TeactStackIcons from "./_teactStackIcons";
+import { IoLogoNodejs } from "react-icons/io";
+import { SiExpress, SiMongodb, SiMui, SiTailwindcss } from "react-icons/si";
+import { TbSql } from "react-icons/tb";
 import { RiJavascriptFill, RiNextjsFill } from "react-icons/ri";
 import { BiLogoFirebase, BiLogoTypescript } from "react-icons/bi";
 
 const TechStack = () => {
   return (
-    <div className="relative text-white mt-20">
+    <div className="relative section-gap text-white ">
       {/* Video with overlay */}
       <div className="relative w-full h-[620px] md:h-[480px]  overflow-hidden rounded-lg">
         <video
@@ -26,7 +26,7 @@ const TechStack = () => {
 
       <div className="absolute inset-0 flex flex-col items-center justify-center z-20 px-4">
         {/* Think better with Next.js 15 badge */}
-        <div className="mb-4 px-4 py-2 bg-[#10060F] border border-purple-400 rounded-full text-white/80 text-sm md:text-base flex items-center gap-2 shadow-lg shadow-purple-300/60">
+        <div className="mb-4 px-4 py-2 bg-[#10060F] border border-purple-400 rounded-full text-sm md:text-base flex items-center gap-2 shadow-lg shadow-purple-300/60 text-purple-300">
           <div className="w-6 h-6 bg-purple-500/50 rounded-full flex items-center justify-center">
             ✦
           </div>
