@@ -5,7 +5,7 @@ import { animatePageOut } from "@/utils/animation";
 interface Props {
   href: string;
   label: string;
-  icon?: JSX.Element; // Change the type of `icon` to `JSX.Element`
+  icon: React.ReactNode; 
 }
 
 const RoutPages = ({ href, label, icon }: Props) => {
