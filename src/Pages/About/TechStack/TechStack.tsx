@@ -24,10 +24,12 @@ const TechStack = () => {
 
       <div className="absolute inset-0 bg-gradient-to-r from-[#0F050E] via-[#341b2690] to-[#0F050E] pointer-events-none"></div>
 
+
+
       <div className="absolute inset-0 flex flex-col items-center justify-center z-20 px-4">
         {/* Think better with Next.js 15 badge */}
-        <div className="mb-4 px-4 py-2 bg-[#10060F] border border-purple-400 rounded-full text-sm md:text-base flex items-center gap-2 shadow-lg shadow-purple-300/60 text-purple-300">
-          <div className="w-6 h-6 bg-purple-500/50 rounded-full flex items-center justify-center">
+        <div className="mb-4 px-4 py-2 bg-[#10060F] border border-[#FFB400] rounded-full text-sm md:text-base flex items-center gap-2 shadow-lg shadow-yellow-300/60 text-yellow-300">
+          <div className="w-6 h-6 bg-yellow-500/50 rounded-full flex items-center justify-center">
             ✦
           </div>
           Think better with Next.js 15

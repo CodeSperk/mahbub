@@ -39,7 +39,7 @@ const RightSkill  = ({title} : titleProp)  => {
   const selectedSkills = skills[title];
 
   return (
-    <div>
+    <div className="min-h-[336px]">
       <h3 className="font-semibold text-primary mb-4 capitalize text-xl">{title}</h3>
       <ul className="space-y-2 text-lg">
         {selectedSkills.map((skill, idx) => (

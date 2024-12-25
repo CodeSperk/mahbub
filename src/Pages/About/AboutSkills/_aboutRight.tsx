@@ -34,23 +34,23 @@ const AboutRight = () => {
         {activeTab === "about" ? (
           <div className="prose prose-purple max-w-none">
             <p className="text-secondary leading-relaxed text-lg md:text-xl">
-              I am a self-taught web developer with 
-              <span className="text-primary"> 
-                1+ year of professional experience 
-              </span>{" "} 
-              at <span className="text-primary">AetherZen</span>.
+              I am a self-taught web developer with{" "}
+              <span className="text-primary">
+                1+ year of professional experience.
+              </span>{" "}
               <br />
               <br />I specialize in crafting high-performance, user-focused web
-              applications with{" "} 
-              <span className="text-primary"> reusable and efficient code </span>. 
-              My work blends design, technology, and innovation, ensuring every
-              project is impactful from concept to release.
+              applications with{" "}
+              <span className="text-primary">
+                {" "}
+                reusable and efficient code{" "}
+              </span>
+              . My work blends design, technology, and innovation, ensuring
+              every project is impactful from concept to release.
               <br />
               <br />
               While focused on Frontend development, I am also exploring Backend
-              technologies to grow as a versatile developer. I leverage
-              cutting-edge tools and open-source solutions to deliver
-              exceptional user experiences.
+              technologies to grow as a Fullstack developer.
             </p>
           </div>
         ) : (

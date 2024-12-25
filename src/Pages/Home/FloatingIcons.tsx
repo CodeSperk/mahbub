@@ -15,8 +15,8 @@ const FloatingIcons: React.FC = () => {
     ICONS.map(icon => ({
       x: (icon.bounds.minX + icon.bounds.maxX) / 2,
       y: (icon.bounds.minY + icon.bounds.maxY) / 2,
-      dx: 0.05,
-      dy: 0.05
+      dx: 0.075,
+      dy: 0.075
     }))
   );
 

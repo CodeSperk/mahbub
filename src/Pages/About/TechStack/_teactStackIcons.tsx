@@ -6,7 +6,7 @@ type TProps = {
 
 const TeactStackIcons  = ({Icon}: TProps) => {
   return (
-    <div className="w-16 h-16 rounded-xl transition-colors border border-[#82528e] bg-purple-900/30 hover:bg-[#82528e] cursor-pointer flex justify-center items-center">
+    <div className="w-16 h-16 rounded-xl transition-colors border border-[#ffb3007c] bg-[#ffb30018] hover:bg-[#ffb300d4] cursor-pointer flex justify-center items-center">
       <Icon className="text-white text-4xl"/>
     </div>
   );
