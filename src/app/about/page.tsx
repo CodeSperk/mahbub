@@ -5,7 +5,7 @@ import React from 'react';
 
 const AboutPage = () => {
   return (
-    <div className=' page-bg min-h-screen'>
+    <div className='page-bg min-h-screen'>
       <div className='max-width'>
       <PageTitle bg="Resume" title1="About" title2="Me"/>
       
