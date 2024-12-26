@@ -1,9 +1,12 @@
 import { GoRocket } from "react-icons/go";
 import AnimatedText from "./_animatedText";
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import { MdDownload, MdOutlineEmail } from "react-icons/md";
+import HireMeButton from "./_resumeBtn";
+import GlowingButton from "./_hireMeBtn";
 import Link from "next/link";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { MdOutlineEmail } from "react-icons/md";
-import Button from "@/components/shared/Button";
+import HireMeBtn from "./_hireMeBtn";
+import ResumeBtn from "./_resumeBtn";
 
 const TextContents = () => {
   return (
@@ -31,16 +34,19 @@ const TextContents = () => {
       </div>
 
       {/* Social links */}
-      <div className="flex gap-4 justify-center lg:justify-start mt-6">
-        <Link target="_blank" href="https://github.com/CodeSperk">
-          <Button icon={FaGithub} title="Github" />
-        </Link>
-        <Link target="_blank" href="https://www.linkedin.com/in/mahbub692">
-          <Button icon={FaLinkedin} title="LinkedIn" />
-        </Link>
-        <Link target="_blank" href="https://www.linkedin.com/in/mahbub692">
-          <Button icon={MdOutlineEmail} title="Email" className="hidden md:flex" />
-        </Link>
+      <div className="flex justify-center lg:justify-start items-center gap-6 text-3xl text-primary mt-6">
+        <a href="https://github.com/CodeSperk" target="_blank">
+          <FaGithub className="hover:scale-125 duration-500" />
+        </a>
+        <a href="https://www.linkedin.com/in/mahbub692" target="_blank">
+          {" "}
+          <FaLinkedin className="hover:scale-125 duration-500" />
+        </a>
+        <FaFacebook className="hover:scale-125 duration-500" />
+      </div>
+      <div className="flex gap-4 justify-center lg:justify-start ">
+        <ResumeBtn />
+        <HireMeBtn />
       </div>
     </section>
   );
