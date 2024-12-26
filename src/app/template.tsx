@@ -10,7 +10,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
 
   return (
     <div>
-      <div className="hidden md:block">
+      <div className="hidden md:block relative z-50">
         <AnimateBG id="banner-1" className="left-0"/>
         <AnimateBG id="banner-2" className="left-1/3"/>
         <AnimateBG id="banner-3" className="left-2/3"/>
