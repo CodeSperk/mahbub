@@ -1,10 +1,6 @@
 import { GoRocket } from "react-icons/go";
 import AnimatedText from "./_animatedText";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
-import { MdDownload, MdOutlineEmail } from "react-icons/md";
-import HireMeButton from "./_resumeBtn";
-import GlowingButton from "./_hireMeBtn";
-import Link from "next/link";
 import HireMeBtn from "./_hireMeBtn";
 import ResumeBtn from "./_resumeBtn";
 

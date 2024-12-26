@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./HireMeButton.module.css";
 import { MdDownload } from "react-icons/md";
 
 const ResumeBtn = () => {
