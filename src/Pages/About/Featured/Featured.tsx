@@ -2,15 +2,9 @@ import React from "react";
 import { Project } from "@/types/types";
 import ProjectCard from "@/Pages/Portfolio/_projectCard";
 import Link from "next/link";
-
-const useProjects = () => {
-  const { projects } = require("@/Pages/Portfolio/__helper");
-  return projects;
-};
+import { projects } from "@/Pages/Portfolio/__helper";
 
 const FeaturedProjects = () => {
-  const projects = useProjects();
-
   const featuredProjects = projects.filter(
     (project: Project) => project.featured
   );
