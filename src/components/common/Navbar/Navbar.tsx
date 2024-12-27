@@ -1,6 +1,6 @@
 import RoutPages from "@/components/shared/Routes";
 import { BsPersonWorkspace } from "react-icons/bs";
-import { FaBlogger, FaHome, FaQuestionCircle } from "react-icons/fa";
+import { FaHome, FaQuestionCircle } from "react-icons/fa";
 import { GrWorkshop } from "react-icons/gr";
 import { MdContacts } from "react-icons/md";
 
