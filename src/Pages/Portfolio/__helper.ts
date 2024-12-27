@@ -1,6 +1,7 @@
 export type Project = {
   id: string;
   title: string;
+  featured: boolean;
   description: string;
   features: string[];
   challenges: string[];
@@ -16,6 +17,7 @@ export const projects: Project[] = [
   {
     id: "tech-hub-001",
     title: "Technology Hub ecommerce",
+    featured: true,
     description: "A comprehensive electronics marketplace enabling users to browse, compare, and purchase latest tech gadgets with secure payment integration and real-time inventory management.",
     features: [
       "User authentication system with multiple social login options and secure password recovery",
@@ -42,6 +44,7 @@ export const projects: Project[] = [
   },
   {
     id: "food-finder-002",
+    featured: false,
     title: "FoodFinder Restaurant App",
     description: "A dynamic restaurant discovery platform where users can find local eateries, read reviews, make reservations and track their delivery orders in real-time.",
     features: [
@@ -69,6 +72,7 @@ export const projects: Project[] = [
   },
   {
     id: "task-master-003",
+    featured: true,
     title: "TaskMaster Project Management",
     description: "A collaborative project management tool featuring task assignment, progress tracking, timeline visualization, and team communication capabilities.",
     features: [
@@ -96,6 +100,7 @@ export const projects: Project[] = [
   },
   {
     id: "health-track-004",
+    featured: false,
     title: "HealthTrack Fitness App",
     description: "A comprehensive fitness tracking application that helps users monitor workouts, nutrition, and health metrics with personalized goal setting and progress analysis.",
     features: [
@@ -124,6 +129,7 @@ export const projects: Project[] = [
   {
     id: "edu-learn-005",
     title: "EduLearn Learning Platform",
+    featured: true,
     description: "An interactive e-learning platform offering course creation, student enrollment, progress tracking, and integrated video conferencing for virtual classrooms.",
     features: [
       "Intuitive course management system with multimedia content support and scheduling",
@@ -151,6 +157,7 @@ export const projects: Project[] = [
   {
     id: "real-estate-006",
     title: "RealEstate Property Manager",
+    featured: false,
     description: "A comprehensive real estate platform for property listing, virtual tours, appointment scheduling, and document management for buyers, sellers, and agents.",
     features: [
       "Advanced property listings with detailed filtering and comparative market analysis",

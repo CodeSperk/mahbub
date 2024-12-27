@@ -30,7 +30,7 @@ const AboutRight = () => {
         </button>
       </div>
 
-      <div className="min-h-[300px]">
+      <div className="lg:min-h-[396px]">
         {activeTab === "about" ? (
           <div className="prose prose-purple max-w-none">
             <p className="text-secondary leading-relaxed text-lg md:text-xl">

@@ -6,7 +6,7 @@ import ResumeBtn from "./_resumeBtn";
 
 const TextContents = () => {
   return (
-    <section className="max-width min-h-screen text-[#fefef5] py-28 flex flex-col justify-center gap-4 xl:gap-5 text-center lg:text-start">
+    <section className="max-width min-h-screen text-[#fefef5] py-28 flex flex-col justify-center gap-4 xl:gap-5 text-center md:text-start">
       <div className="leading-none">
         <h5 className="text-primary text-2xl md:text-[28px]">
           Hey there!, I&apos;m-
@@ -24,13 +24,13 @@ const TextContents = () => {
         </span>
       </h5>
 
-      <div className="flex gap-2 items-center justify-center lg:justify-start text-2xl md:text-[28px] xl:text-[36px] ">
+      <div className="flex gap-2 items-center justify-center md:justify-start text-2xl md:text-[28px] xl:text-[36px] ">
         <GoRocket className="hidden lg:block" />
         <AnimatedText />
       </div>
 
       {/* Social links */}
-      <div className="flex justify-center lg:justify-start items-center gap-6 text-3xl text-primary mt-6">
+      <div className="flex justify-center md:justify-start items-center gap-6 text-3xl text-primary mt-6">
         <a href="https://github.com/CodeSperk" target="_blank">
           <FaGithub className="hover:scale-125 duration-500" />
         </a>
@@ -40,7 +40,7 @@ const TextContents = () => {
         </a>
         <FaFacebook className="hover:scale-125 duration-500" />
       </div>
-      <div className="flex gap-4 justify-center lg:justify-start ">
+      <div className="flex gap-4 justify-center md:justify-start ">
         <ResumeBtn />
         <HireMeBtn />
       </div>

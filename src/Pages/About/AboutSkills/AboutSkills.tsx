@@ -3,7 +3,7 @@ import AboutRight from "./_aboutRight";
 
 const AboutSkills = () => {
   return (
-    <div className="max-width section-gap flex flex-col lg:flex-row gap-20 items-center justify-center ">
+    <div className="section-gap flex flex-col lg:flex-row gap-20 items-center justify-center">
       <AboutLeft />
       <AboutRight />
     </div>

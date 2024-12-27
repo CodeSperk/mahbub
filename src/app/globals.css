@@ -25,5 +25,5 @@ body{
 }
 
 .section-gap{
-  @apply mt-12 md:mt-20 lg:mt-28
+  @apply mt-16 md:mt-24 lg:mt-28
 }
