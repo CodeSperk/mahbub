@@ -2,8 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { Suspense } from "react";
 import { FaArrowCircleRight } from "react-icons/fa";
+import { Project } from "@/Pages/Portfolio/__helper"
 
-const ProjectCard = ({ project }: { project: any }) => {
+const ProjectCard = ({ project }: { project: Project }) => {
   if (!project) return null;
   const { id, img, title } = project;
 

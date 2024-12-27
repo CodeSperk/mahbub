@@ -29,7 +29,7 @@ const RoutPages = ({ href, label, icon }: Props) => {
       onClick={handleClick}
     >
       {/* <span className="hidden hover:block">{label}</span> */}
-      {icon} 
+      {icon} <span className="hidden">{label}</span>
     </button>
 
   );
