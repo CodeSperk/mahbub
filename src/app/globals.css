@@ -21,7 +21,7 @@ body{
   @apply text-gray-400;
 }
 .page-bg{
-  @apply bg-gradient-to-r from-[#0F050E] via-[#13040b] to-[#0F050E] 
+  @apply bg-gradient-to-r from-[#0F050E] via-[#13040b] to-[#0F050E] text-white; 
 }
 
 .section-gap{
