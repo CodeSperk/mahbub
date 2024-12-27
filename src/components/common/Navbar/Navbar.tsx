@@ -1,6 +1,6 @@
 import RoutPages from "@/components/shared/Routes";
 import { BsPersonWorkspace } from "react-icons/bs";
-import { FaBlogger, FaHome } from "react-icons/fa";
+import { FaBlogger, FaHome, FaQuestionCircle } from "react-icons/fa";
 import { GrWorkshop } from "react-icons/gr";
 import { MdContacts } from "react-icons/md";
 
@@ -11,7 +11,7 @@ const Navbar = () => {
       <RoutPages href="/" label="Home" icon={<FaHome />} />
       <RoutPages href="/about" label="About" icon={<BsPersonWorkspace />} />
       <RoutPages href="/portfolio" label="Portfolio" icon={<GrWorkshop />} />
-      <RoutPages href="/blog" label="Blog" icon={<FaBlogger />} />
+      <RoutPages href="/faq" label="FAQ" icon={<FaQuestionCircle />} />
       <RoutPages href="/contact" label="Contact" icon={<MdContacts />} />
     </ul>
     </nav>
