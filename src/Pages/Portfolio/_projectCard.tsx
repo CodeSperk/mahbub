@@ -8,7 +8,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
 
   return (
     <div
-      className="flex flex-col gap-8 justify-start cursor-pointer"
+      className="flex flex-col gap-8 justify-start"
     >
       <div className="relative bg-cover bg-no-repeat overflow-hidden p-12 lg:p-16 xl:p-24 pb-0 h-[360px] lg:h-[444px] xl:h-[550px]">
         <div className="absolute -top-80 lg:-top-96 left-1/2 lg:left-3/5 -translate-x-1/2 xl:-translate-x-1/3 -rotate-[45deg] w-3/5 z-0">
