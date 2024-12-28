@@ -1,5 +1,5 @@
 import React from "react";
-import "@/styles/animations.css";
+import "@/styles/btnAnimation.css";
 import { MdDownload } from "react-icons/md";
 import Link from "next/link";
 
@@ -9,7 +9,7 @@ const ResumeBtn = () => {
       href="/mahbub.pdf"
       target="_blank"
       download="resume"
-      className="glow-button flex items-center justify-center gap-2"
+      className="glow-button flex items-center justify-center gap-2 w-60 md:w-80 pt-6"
     >
       <p className="text-xl">Resume </p>
       <MdDownload />

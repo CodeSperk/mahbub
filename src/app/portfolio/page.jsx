@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import ProjectCard from "../../Pages/Portfolio/_projectCard";
+import ProjectCard from "../../components/shared/ProjectCard";
 import dynamic from "next/dynamic";
 
 const PageTitle = dynamic(() => import("@/components/shared/Heading"), {

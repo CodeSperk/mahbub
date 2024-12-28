@@ -49,5 +49,10 @@ export const faqs : Faq[] =[
     "id": 9,
     "question": "What motivates you to pursue full-stack development?",
     "answer": "I enjoy solving complex problems and want to have control over both the frontend and backend of applications. By becoming a full-stack developer, I can offer complete solutions and build more dynamic and interactive web applications."
+  },
+  {
+    "id": 10,
+    "question": "What motivates you to pursue full-stack development?",
+    "answer": "I enjoy solving complex problems and want to have control over both the frontend and backend of applications. By becoming a full-stack developer, I can offer complete solutions and build more dynamic and interactive web applications."
   }
 ]

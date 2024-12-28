@@ -1,7 +1,7 @@
 import { GoRocket } from "react-icons/go";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import AnimatedText from "./__animatedText";
-import ResumeBtn from "./__resumeBtn";
+import ResumeBtn from "../../About/AboutMe/__resumeBtn";
 
 const TextContents = () => {
   return (

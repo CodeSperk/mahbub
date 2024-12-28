@@ -1,6 +1,6 @@
 import React from "react";
 import { Project } from "@/types/types";
-import ProjectCard from "@/Pages/Portfolio/_projectCard";
+import ProjectCard from "@/components/shared/ProjectCard";
 import Link from "next/link";
 import { projects } from "@/Pages/Portfolio/__helper";
 
