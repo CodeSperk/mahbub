@@ -1,5 +1,4 @@
 import React from "react";
-import TeactStackIcons from "./__techIcon";
 import { RiJavascriptFill, RiNextjsFill } from "react-icons/ri";
 import { FaCss3Alt, FaHtml5, FaReact, FaShopify } from "react-icons/fa";
 import { SiExpress, SiMongodb, SiMui, SiTailwindcss } from "react-icons/si";

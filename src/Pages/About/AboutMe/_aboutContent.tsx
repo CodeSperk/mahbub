@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import RightSkill from "./__skills";
 import Skills from "./__skills";
 
 const AboutContent = () => {
