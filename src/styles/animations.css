@@ -1,14 +1,14 @@
 .glow-button {
-  padding: 16px 30px;
+  padding: 12px 24px;
   font-size: 18px;
   border-radius: 8px;
   cursor: pointer;
-  background: #ffd700;
-  color: #000;
+  background: #4d204d;;
+  color: #fff;
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease;
-  border: 2px solid black;
+  border: 2px solid #4d204d;
 }
 
 .glow-button::before {
@@ -21,9 +21,9 @@
   background: linear-gradient(
     45deg,
     transparent,
-    rgba(255, 255, 0, 0.3),
-    #fff9c4,
-    rgba(255, 255, 0, 0.3),
+    rgba(255, 85, 170, 0.3), /* Pink Glow */
+    #ffb3d9, /* Soft Pink */
+    rgba(255, 85, 170, 0.3),
     transparent
   );
   transform: rotate(45deg);
@@ -31,8 +31,7 @@
 }
 
 .glow-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+    box-shadow: 0 0 20px rgba(255, 85, 170, 0.6);
 }
 
 @keyframes glowing {

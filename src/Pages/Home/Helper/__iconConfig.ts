@@ -21,23 +21,16 @@ const ICONS: IconConfig[] = [
   {
     id: 'react',
     viewBox: '0 0 24 24',
-    Icon: FaReact,
     color: 'text-[#021733]',
-    bounds: { minX: 95, maxX: 95, minY: 10, maxY: 20 }
+    Icon: FaReact,
+    bounds: { minX: 95, maxX: 95, minY: 10, maxY: 20 }    
   },
   {
     id: 'nextjs',
     viewBox: '0 0 24 24',
     Icon: RiNextjsLine,
-    color: 'text-[#33153365]',
-    bounds: { minX: 5, maxX: 5, minY: 80, maxY: 95 }
-  },
-  {
-    id: 'typescript',
-    viewBox: '0 0 24 24',
-    Icon: SiTypescript,
-    color: 'text-[#33153355]',
-    bounds: { minX: 80, maxX: 80, minY: 70, maxY: 70 }
+    color: 'text-[#422A4265]',
+    bounds: { minX: 90, maxX: 90, minY: 65, maxY: 65 }    
   },
   {
     id: 'express',
@@ -51,21 +44,28 @@ const ICONS: IconConfig[] = [
     viewBox: '0 0 24 24',
     Icon: IoLogoJavascript,
     color: 'text-[#02173390]',
-    bounds: { minX: 5, maxX: 20, minY: 15, maxY: 15 }
+    bounds: { minX: 5, maxX: 15, minY: 15, maxY: 15 }
+  },
+  {
+    id: 'typescript',
+    viewBox: '0 0 24 24',
+    Icon: SiTypescript,
+    color: 'text-[#33153330]',
+    bounds: { minX: 10, maxX: 10, minY: 90, maxY: 90 }
   },
   {
     id: 'mongodb',
     viewBox: '0 0 24 24',
     Icon: SiMongodb,
     color: 'text-[#422A4265]',
-    bounds: { minX: 70, maxX: 80, minY: 45, maxY: 45 }
+    bounds: { minX: 80, maxX: 80, minY: 55, maxY: 55 }
   },
   {
     id: 'sql',
     viewBox: '0 0 24 24',
     Icon: TbSql,
     color: 'text-[#422A4265]',
-    bounds: { minX: 85, maxX: 85, minY: 45, maxY: 45 }
+    bounds: { minX: 85, maxX: 85, minY: 50, maxY: 50 }
   }
 ];
 

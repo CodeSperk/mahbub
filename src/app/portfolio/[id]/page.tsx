@@ -24,7 +24,7 @@ const project = {
   serverRepo: "https://github.com/CodeSperk/tech_spot-A12_server",
   liveLink: "https://b9a12-final-project.web.app",
   img: [
-    "/projects/project-slider-img-1.webp",
+    "/projects/aetherzen.png",
     "/projects/project-slider-img-1.webp",
     "/projects/project-slider-img-1.webp",
   ],

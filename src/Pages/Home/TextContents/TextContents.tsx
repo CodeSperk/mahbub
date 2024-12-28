@@ -1,7 +1,6 @@
 import { GoRocket } from "react-icons/go";
 import AnimatedText from "./_animatedText";
-import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
-import HireMeBtn from "./_hireMeBtn";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import ResumeBtn from "./_resumeBtn";
 
 const TextContents = () => {
@@ -16,33 +15,33 @@ const TextContents = () => {
         </h1>
       </div>
 
-      <h5 className="text-2xl md:text-[28px] xl:text-[36px] leading-[40px]">
-        Software Engineer .{" "}
-        <span className="text-secondary">
-          A Self-taught developer with an <br className="hidden md:block" />{" "}
-          interest in MERN Stack Development
-        </span>
-      </h5>
-
       <div className="flex gap-2 items-center justify-center md:justify-start text-2xl md:text-[28px] xl:text-[36px] ">
         <GoRocket className="hidden lg:block" />
         <AnimatedText />
       </div>
 
-      {/* Social links */}
-      <div className="flex justify-center md:justify-start items-center gap-6 text-3xl text-primary mt-6">
-        <a href="https://github.com/CodeSperk" target="_blank">
-          <FaGithub className="hover:scale-125 duration-500" />
+      <h5 className="text-2xl md:text-[28px] xl:text-[36px] leading-[40px]">
+        Software Engineer .{" "}
+        <span className="text-secondary">
+          A Self-taught web developer with an <br className="hidden md:block" />{" "}
+          interest in MERN Stack Development
+        </span>
+      </h5>
+
+
+     
+      <div className="flex gap-6 justify-center md:justify-start items-center mt-4">
+        
+        
+        <a href="https://github.com/CodeSperk" target="_blank" className="p-2 text-2xl text-[#4d204d] bg-[#fdcde5] rounded-md hover:scale-110 duration-300">
+          <FaGithub className="duration-500" />
         </a>
-        <a href="https://www.linkedin.com/in/mahbub692" target="_blank">
-          {" "}
-          <FaLinkedin className="hover:scale-125 duration-500" />
+        <ResumeBtn /> 
+        <a href="https://www.linkedin.com/in/mahbub692" target="_blank" className="p-2 text-2xl text-[#4d204d] bg-[#fdcde5] rounded-md hover:scale-110 duration-300">
+          <FaLinkedin className="duration-500" />
         </a>
-        <FaFacebook className="hover:scale-125 duration-500" />
-      </div>
-      <div className="flex gap-4 justify-center md:justify-start ">
-        <ResumeBtn />
-        <HireMeBtn />
+        
+    
       </div>
     </section>
   );

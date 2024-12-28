@@ -63,9 +63,9 @@ export const projects: Project[] = [
     serverRepo: "https://github.com/CodeSperk/food-finder-server",
     liveLink: "https://food-finder-app.web.app",
     img: [
-      "/projects/project-slider-img-1.webp",
-      "/projects/project-slider-img-1.webp",
-      "/projects/project-slider-img-1.webp"
+      "/projects/aetherzen.png",
+      "/projects/aetherzen.png",
+      "/projects/aetherzen.png",
     ],
     technologies: ["React", "Material UI", "PostgreSQL", "AWS", "Express", "Redis"],
     admin: ["admin@foodfinder.com", "food123admin"]
