@@ -1,33 +1,24 @@
 import React from "react";
-import { RiJavascriptFill, RiNextjsFill } from "react-icons/ri";
-import { FaCss3Alt, FaHtml5, FaReact, FaShopify } from "react-icons/fa";
-import { SiExpress, SiMongodb, SiMui, SiTailwindcss } from "react-icons/si";
-import { BiLogoFirebase, BiLogoTypescript } from "react-icons/bi";
-import { IoLogoNodejs } from "react-icons/io";
-import { TbSql } from "react-icons/tb";
 import TeachIcon from "./__techIcon";
+import iconsData from "../_helpers/_stackIcons";
 
 const TechIcons = () => {
   return (
     <div>
       <div className="mt-12 md:mt-16 flex flex-wrap justify-center gap-4 lg:gap-6 max-w-4xl">
-        <TeachIcon Icon={RiNextjsFill} />
-        <TeachIcon Icon={FaReact} />
-        <TeachIcon Icon={RiJavascriptFill} />
-        <TeachIcon Icon={SiTailwindcss} />
-        <TeachIcon Icon={BiLogoTypescript} />
-        <TeachIcon Icon={SiExpress} />
-        <TeachIcon Icon={IoLogoNodejs} />
-        <TeachIcon Icon={SiMui} />
+        {
+          iconsData.slice(0, 8).map((icon, idx) => (
+            <TeachIcon key={idx} Icon={icon.icon} />
+          ))
+        }
       </div>
 
       <div className="flex flex-wrap justify-center gap-5 lg:gap-6 mt-6 max-w-2xl">
-        <TeachIcon Icon={FaHtml5} />
-        <TeachIcon Icon={FaCss3Alt} />
-        <TeachIcon Icon={SiMongodb} />
-        <TeachIcon Icon={TbSql} />
-        <TeachIcon Icon={BiLogoFirebase} />
-        <TeachIcon Icon={FaShopify} />
+        {
+          iconsData.slice(8, iconsData.length + 1).map((icon, idx) => (
+            <TeachIcon key={idx} Icon={icon.icon} />
+          ))
+        }
       </div>
     </div>
   );

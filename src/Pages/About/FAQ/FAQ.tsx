@@ -11,7 +11,7 @@ interface Faq {
 }
 
 const FAQ : React.FC = () => {
-  const itemsPerPage = 4;
+  const itemsPerPage = 2;
   const [currentPage, setCurrentPage] = useState(1);
 
   const totalPages: number = Math.ceil(faqs.length / itemsPerPage);
@@ -19,13 +19,11 @@ const FAQ : React.FC = () => {
   const endIndex = startIndex + itemsPerPage;
   const currentFaqs : Faq[] = faqs.slice(startIndex, endIndex);
 
-  const rowsNeeded = Math.ceil((currentFaqs.length / 2) * 3);
-
   return (
      <section className='section-gap py-4'>
       {/* section title */}
       <div className='xl:grid xl:grid-cols-2 gap-8 space-y-8 xl:space-y-0' style={{
-        gridTemplateRows: `repeat(${rowsNeeded + 1}, minmax(0, 1fr))`
+        gridTemplateRows: `repeat(4, minmax(0, 1fr))`
       }}>
       <div className='space-y-4'>
         <h3 className='text-5xl font-bold text-primary'>FAQs About Me</h3>
@@ -39,8 +37,6 @@ const FAQ : React.FC = () => {
             className={`
               ${idx === 0 && "xl:col-start-1 xl:row-start-2 xl:row-span-3"} 
               ${idx === 1 && "xl:col-start-2 xl:row-start-1 xl:row-span-3"}
-              ${idx === 2 && "xl:row-start-5 xl:col-start-1 xl:row-span-3"}
-              ${idx === 3 && "xl:row-start-4 xl:col-start-2 xl:row-span-3"}
             `}
           >
             <FaqCard 
