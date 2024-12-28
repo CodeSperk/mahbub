@@ -1,39 +1,49 @@
 import React from "react";
 import "@/styles/btnAnimation.css";
-// import { MdDownload } from "react-icons/md";
 import Link from "next/link";
 
-interface BtnProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
-    React.AnchorHTMLAttributes<HTMLAnchorElement> {
-  href?: string;
+type CommonProps = {
   icon?: React.ReactNode;
-  download?: string;
-}
+  className?: string;
+  children: React.ReactNode;
+};
 
-const GlowingBtn : React.FC<BtnProps> = ({href, icon, download, className, children, ...props}) => {
-  if(href) {
+type ButtonAsButton = CommonProps & {
+  href?: never;
+  download?: never;
+} & React.ButtonHTMLAttributes<HTMLButtonElement>;
+
+type ButtonAsLink = CommonProps & {
+  href: string;
+  download?: string;
+} & Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, keyof CommonProps | 'href' | 'download'>;
+
+type ButtonProps = ButtonAsButton | ButtonAsLink;
+
+const GlowingBtn: React.FC<ButtonProps> = ({ href, download, icon, className, children, ...props }) => {
+  const baseClasses = `glow-button px-4 py-2 inline-flex items-center justify-center gap-2 rounded-md ${className || ''}`;
+
+  if (href) {
     return (
       <Link
         href={href}
+        {...(props as Omit<ButtonAsLink, keyof CommonProps | 'href' | 'download'>)}
+        className={baseClasses}
         download={download}
-        className={`glow-button px-4 py-2 inline-flex items-center justify-center gap-2 rounded-md ${className}`}
-        {...props}
       >
-        {children}
         {icon && <span>{icon}</span>}
-
+        {children}
       </Link>
-    )
+    );
   }
 
   return (
     <button
-      className={`glow-button px-4 py-2 inline-flex items-center gap-2 rounded-md ${className}`}
-      {...(props as React.ButtonHTMLAttributes<HTMLButtonElement>)}
+      className={baseClasses}
+      {...(props as ButtonAsButton)}
     >
-     {icon && <span>{icon}</span>}
-     {children}
+      {icon && <span>{icon}</span>}
+      {children}
     </button>
   );
 };
