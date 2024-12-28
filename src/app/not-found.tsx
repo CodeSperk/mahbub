@@ -15,7 +15,7 @@ const NotFound = () => {
         </div>
 
         <p className="text-secondary max-w-lg text-2xl mx-auto pb-6">
-          Oops! This page is lost in space. Head back home to start your journey
+          This page is lost in space. Head back home to start your journey
           again.
         </p>
 

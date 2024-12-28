@@ -1,7 +1,7 @@
 import { GoRocket } from "react-icons/go";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaLongArrowAltRight } from "react-icons/fa";
 import AnimatedText from "./__animatedText";
-import ResumeBtn from "../../About/AboutMe/__resumeBtn";
+import GlowingBtn from "../../../components/shared/GlowingBtn";
 
 const TextContents = () => {
   return (
@@ -36,7 +36,13 @@ const TextContents = () => {
         >
           <FaGithub className="duration-500" />
         </a>
-        <ResumeBtn />
+        <GlowingBtn
+          icon={<FaLongArrowAltRight />}
+          href="/contact"
+          className=""
+        >
+          Hire Me
+        </GlowingBtn>
         <a
           href="https://www.linkedin.com/in/mahbub692"
           target="_blank"

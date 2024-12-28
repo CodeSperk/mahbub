@@ -1,6 +1,7 @@
-import ResumeBtn from "@/Pages/About/AboutMe/__resumeBtn";
+import GlowingBtn from "@/components/shared/GlowingBtn";
 import Image from "next/image";
 import React from "react";
+import { FaDownload } from "react-icons/fa";
 
 const ProfilePhoto = () => {
   return (
@@ -27,7 +28,15 @@ const ProfilePhoto = () => {
       </div>
 
       <div className="w-60 md:w-80 pt-6">
-        <ResumeBtn />
+      <GlowingBtn
+          icon={<FaDownload />}
+          href="/mahbub.pdf"
+          target="_blank"
+          download="Mahbubur_Rahman_Resume"
+          className="w-full"
+        >
+          Resume
+        </GlowingBtn>
       </div>
     </div>
   );
