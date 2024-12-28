@@ -4,8 +4,8 @@ import HeroSection from "@/Pages/Home/Hero/Hero";
 const HomePage = () => {
   return (
     <div>
-      <HeroSection/>
-      <FeaturedProjects/>
+      <HeroSection />
+      <FeaturedProjects />
     </div>
   );
 };

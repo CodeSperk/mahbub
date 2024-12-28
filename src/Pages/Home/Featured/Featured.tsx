@@ -10,10 +10,10 @@ const FeaturedProjects = () => {
   );
 
   return (
-    <div className="page-bg py-10 md:py-12 lg:py-16">
-    <section className="max-width section-gap text-white w-full space-y-10 md:space-y-0 md:grid  md:grid-cols-2 grid-rows-4 gap-12">
+    <section className="page-bg py-2">
+    <div className="max-width section-gap text-white w-full space-y-10 md:space-y-0 md:grid  md:grid-cols-2 grid-rows-4 gap-12 xl:gap-20">
       <div className="">
-        <h2 className="text-4xl font-bold">Notable Projects from My Journey</h2>
+        <h2 className="text-5xl font-bold text-primary">Notable Projects from My Journey</h2>
         <p className="text-secondary mt-4 text-xl">
           Here are some of my projects that I have worked on.
         </p>
@@ -39,8 +39,8 @@ const FeaturedProjects = () => {
           <ProjectCard project={project} />
         </div>
       ))}
-    </section>
     </div>
+    </section>
   );
 };
 

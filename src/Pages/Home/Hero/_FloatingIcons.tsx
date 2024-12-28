@@ -1,7 +1,6 @@
 "use client"
-// components/HomePage/FloatingIcons.tsx
 import React, { useEffect, useState } from 'react';
-import ICONS from './Helper/__iconConfig';
+import ICONS from '../_helpers/__iconConfig';
 
 interface Position {
   x: number;

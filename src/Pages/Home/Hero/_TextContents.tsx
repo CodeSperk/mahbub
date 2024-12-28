@@ -1,7 +1,7 @@
 import { GoRocket } from "react-icons/go";
-import AnimatedText from "./_animatedText";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import ResumeBtn from "./_resumeBtn";
+import AnimatedText from "./__animatedText";
+import ResumeBtn from "./__resumeBtn";
 
 const TextContents = () => {
   return (
@@ -23,25 +23,27 @@ const TextContents = () => {
       <h5 className="text-2xl md:text-[28px] xl:text-[36px] leading-[40px]">
         Software Engineer .{" "}
         <span className="text-secondary">
-          A Self-taught web developer with an <br className="hidden md:block" />{" "}
+          A Self-taught web developer <br className="hidden md:block" /> with an
           interest in MERN Stack Development
         </span>
       </h5>
 
-
-     
       <div className="flex gap-6 justify-center md:justify-start items-center mt-4">
-        
-        
-        <a href="https://github.com/CodeSperk" target="_blank" className="p-2 text-2xl text-[#4d204d] bg-[#fdcde5] rounded-md hover:scale-110 duration-300">
+        <a
+          href="https://github.com/CodeSperk"
+          target="_blank"
+          className="p-2 text-2xl text-[#4d204d] bg-[#fdcde5] rounded-md hover:scale-110 duration-300"
+        >
           <FaGithub className="duration-500" />
         </a>
-        <ResumeBtn /> 
-        <a href="https://www.linkedin.com/in/mahbub692" target="_blank" className="p-2 text-2xl text-[#4d204d] bg-[#fdcde5] rounded-md hover:scale-110 duration-300">
+        <ResumeBtn />
+        <a
+          href="https://www.linkedin.com/in/mahbub692"
+          target="_blank"
+          className="p-2 text-2xl text-[#4d204d] bg-[#fdcde5] rounded-md hover:scale-110 duration-300"
+        >
           <FaLinkedin className="duration-500" />
         </a>
-        
-    
       </div>
     </section>
   );
