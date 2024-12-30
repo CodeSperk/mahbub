@@ -1,4 +1,5 @@
 // components/ProjectDetailsView.tsx
+import GlowingBtn from "@/components/shared/GlowingBtn";
 import Image from "next/image";
 import Link from "next/link";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
@@ -64,15 +65,16 @@ const ProjectDetailsView = () => {
           <div className="flex flex-col gap-4 mb-8">
             {/* Source Links */}
             <div className="flex flex-wrap gap-4">
-              <Link
-                href={project.liveLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition-colors flex items-center gap-2"
+             
+              <GlowingBtn
+              href={project.liveLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-row px-10"
+              icon={<FaExternalLinkAlt/>}
               >
-                <FaExternalLinkAlt className="w-5 h-5" />
                 Live Demo
-              </Link>
+              </GlowingBtn>
               <Link
                 href={project.clientRepo}
                 target="_blank"

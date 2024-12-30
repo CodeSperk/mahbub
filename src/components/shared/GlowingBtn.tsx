@@ -1,5 +1,5 @@
 import React from "react";
-import "@/styles/btnAnimation.css";
+import "@/styles/btnStyles.css";
 import Link from "next/link";
 
 type CommonProps = {
@@ -21,7 +21,7 @@ type ButtonAsLink = CommonProps & {
 type ButtonProps = ButtonAsButton | ButtonAsLink;
 
 const GlowingBtn: React.FC<ButtonProps> = ({ href, download, icon, className, children, ...props }) => {
-  const baseClasses = `glow-button px-4 py-2 inline-flex items-center justify-center gap-2 rounded-md ${className || ''}`;
+  const baseClasses = `glow-button px-4 py-2 flex items-center justify-center gap-2 rounded-md ${className || ''}`;
 
   if (href) {
     return (
@@ -31,8 +31,8 @@ const GlowingBtn: React.FC<ButtonProps> = ({ href, download, icon, className, ch
         className={baseClasses}
         download={download}
       >
-        {icon && <span>{icon}</span>}
         {children}
+        {icon && <span>{icon}</span>}
       </Link>
     );
   }
@@ -42,8 +42,8 @@ const GlowingBtn: React.FC<ButtonProps> = ({ href, download, icon, className, ch
       className={baseClasses}
       {...(props as ButtonAsButton)}
     >
-      {icon && <span>{icon}</span>}
       {children}
+      {icon && <span>{icon}</span>}
     </button>
   );
 };

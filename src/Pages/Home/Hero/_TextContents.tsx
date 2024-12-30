@@ -36,11 +36,7 @@ const TextContents = () => {
         >
           <FaGithub className="duration-500" />
         </a>
-        <GlowingBtn
-          icon={<FaLongArrowAltRight />}
-          href="/contact"
-          className=""
-        >
+        <GlowingBtn icon={<FaLongArrowAltRight />} href="/contact" className="">
           Hire Me
         </GlowingBtn>
         <a

@@ -40,7 +40,7 @@ const Pagination: React.FC<PaginationProps> = ({
         className="px-4 py-2 bg-[#632b63] text-white rounded-md disabled:opacity-20"
         disabled={currentPage === totalPages}
       >
-        Prev
+        Next
       </button>
     </div>
   );
