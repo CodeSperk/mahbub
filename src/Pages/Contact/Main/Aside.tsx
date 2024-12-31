@@ -15,11 +15,11 @@ const Aside = () => {
       </div>
       <div className="bg-[#13040B] p-8 rounded-sm space-y-4 md:text-lg">
         <p>Website:</p>
-        <p className="text-secondary">mahbub-lime.vercel.app</p>
+        <Link href="http://localhost:3000" className="text-secondary hover:text-blue-900 hover:underline">portfolio@mahbub.com</Link>
       </div>
       <div className="bg-[#13040B] p-8 rounded-sm space-y-4 md:text-lg">
-        <p>Phone:</p>
-        <p className="text-secondary">015221251146</p>
+        <p>Address:</p>
+        <p className="text-secondary">Dhaka, Bangladesh</p>
       </div>
     </div>
 

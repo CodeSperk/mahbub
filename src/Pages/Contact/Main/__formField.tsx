@@ -24,7 +24,7 @@ const FormField : React.FC<FormFieldProps>  = ({
   const commonClasses = `
      w-full px-4 py-3 rounded-lg bg-transparent 
     border border-gray-600 text-gray-300 
-    focus:outline-none focus:border-orange-500 
+    focus:outline-none focus:border-[#FFB400] 
     transition-all duration-200 relative
     ${isOccupied ? "pt-6 pb-2" : "pt-3 pb-3"}
     ${

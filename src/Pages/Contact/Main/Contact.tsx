@@ -3,7 +3,7 @@ import ContactForm from './_form';
 
 const Contact = () => {
   return (
-    <section className="lg:flex-1 w-[calc(100% - 390px) h-24">
+    <section className="lg:flex-1 w-[calc(100% - 390px)">
     <div className="space-y-6">
       <h6 className="border-l-2 text-lg text-secondary">
         <span className="ml-1 border-l-2 pl-4">Get in Touch</span>
