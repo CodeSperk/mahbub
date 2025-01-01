@@ -3,9 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* Colors */
 body{
   font-family: "Inter", serif;
+  color: #B3B3B3;
 }
 .font-poppins{
   font-family: "Poppins", serif;
@@ -15,16 +16,9 @@ body{
   @apply max-w-[1400px] mx-auto px-4 md:px-12 lg:px-20 xl:px-24
 }
 
-.text-primary{
-  @apply text-[#FFB400]
-}
-.text-secondary{
-  @apply text-gray-400;
-}
-.page-bg{
-  @apply bg-gradient-to-r from-[#0F050E] via-[#13040b] to-[#0F050E] text-white; 
-}
-
 .section-gap{
   @apply mt-16 md:mt-24 lg:mt-28
+}
+p{
+  @apply text-secondary
 }

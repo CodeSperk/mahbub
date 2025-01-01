@@ -9,12 +9,12 @@ const AboutContent = () => {
     <div className="lg:w-1/2 w-full">
 
       {/* tabs */}
-      <div className="mb-8 inline-flex rounded-lg border-2 border-gray-400 bg-transparent">
+      <div className="mb-8 inline-flex rounded-lg border-2 border-[#4d204d] bg-transparent">
         <button
           className={`px-6 py-2 rounded-md text-sm font-medium transition-colors ${
             activeTab === "about"
-              ? "bg-[#4d204d] text-white"
-              : "text-secondary hover:text-[#FFB400]"
+              ? "bg-[#4d204d]"
+              : "hover:text-[#4d204d]"
           }`}
           onClick={() => setActiveTab("about")}
         >
@@ -23,8 +23,8 @@ const AboutContent = () => {
         <button
           className={`px-6 py-2 rounded-md text-sm font-medium transition-colors ${
             activeTab === "skills"
-              ? "bg-[#FFB400] text-white"
-              : "text-secondary hover:text-[#4d204d]"
+              ? "bg-[#4d204d]"
+              : "hover:text-[#4d204d]"
           }`}
           onClick={() => setActiveTab("skills")}
         >
@@ -36,15 +36,15 @@ const AboutContent = () => {
       <div className="lg:min-h-[396px]">
         {activeTab === "about" ? (
           <div className="prose prose-purple max-w-none">
-            <p className="text-secondary leading-relaxed text-lg md:text-xl">
+            <p className="leading-relaxed text-lg md:text-xl">
               I am a self-taught web developer with{" "}
-              <span className="text-[#4d204d] font-bold">
+              <span className="text-highlight font-bold">
                 1+ year of professional experience.
               </span>{" "}
               <br />
               <br />I specialize in crafting high-performance, user-focused web
               applications with{" "}
-              <span className="text-[#4d204d] font-bold">
+              <span className="text-highlight font-bold">
                 {" "}
                 reusable and efficient code.{" "}
               </span>

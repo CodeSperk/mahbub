@@ -1,4 +1,5 @@
 import React from "react";
+import "@/styles/btnStyles.css";
 
 type TProps = {
   icon: React.ElementType;
@@ -8,8 +9,8 @@ type TProps = {
 
 const Button = ({ icon: Icon, title, className }: TProps) => {
   return (
-    <div className={`flex gap-2 items-center bg-[#1a0712] hover:bg-[#3e102b] border border-[#2a0c1e] p-2 px-4 xl:px-6 rounded-md text-lg ${className}`}>
-      <Icon className="text-primary" />
+    <div className={`glow-button  ${className}`}>
+      <Icon className="" />
       <button>{title}</button>
     </div>
   );

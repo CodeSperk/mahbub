@@ -4,7 +4,7 @@ import TechIcons from "./_techIcons";
 
 const TechStack = () => {
   return (
-    <section className="relative section-gap text-white ">
+    <section className="relative section-gap">
       {/* Video with overlay */}
       <Suspense
         fallback={<div className="animate-pulse bg-gray-200 w-full h-full" />}
@@ -23,7 +23,7 @@ const TechStack = () => {
               "0 0 6px 2px #632b63, 0 0 6px 2px #632b63, 0 0 6px 2px #632b63",
           }}
         >
-          <div className="w-6 h-6 bg-[#4d204d] rounded-full flex items-center justify-center text-white">
+          <div className="w-6 h-6 bg-[#4d204d] rounded-full flex items-center justify-center">
             ✦
           </div>
           Think better with Next.js 15
@@ -31,13 +31,13 @@ const TechStack = () => {
 
         {/* heading */}
         <div>
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white text-center mb-4">
+          <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-4">
             Building web apps with modern technologies
-          </h1>
-
-          <p className="text-xl text-white/80 text-center">
+          </h3>
+          <h4 className="text-xl text-center">
             with a focus on creativity, functionality, and impact.
-          </p>
+          </h4>
+
         </div>
 
         <TechIcons />

@@ -19,23 +19,22 @@ const FormField : React.FC<FormFieldProps>  = ({
   multiline = false,
 }) => {
   const [isFocused, setIsFocused] = useState(false);
-  const isOccupied = value.length > 0 || isFocused;
 
   const commonClasses = `
      w-full px-4 py-3 rounded-lg bg-transparent 
-    border border-gray-600 text-gray-300 
-    focus:outline-none focus:border-[#FFB400] 
-    transition-all duration-200 relative
-    ${isOccupied ? "pt-6 pb-2" : "pt-3 pb-3"}
+    border-2 border-secondary 
+    focus:outline-none focus:border-highlight 
+    transition-all duration-300 relative
+    }
     ${
       isFocused
-        ? "shadow-[0_0_15px_rgba(249,115,22,0.15)] border-orange-500"
+        ? "border-highlight"
         : ""
     }
   `;
 
   return (
-    <div>
+    <div className="space-y-2">
       <label>{label}</label>
       {multiline ? (
         <textarea
@@ -45,7 +44,7 @@ const FormField : React.FC<FormFieldProps>  = ({
           onChange={onChange}
           onFocus={() => setIsFocused(true)}
           onBlur={() => setIsFocused(false)}
-          className={`${commonClasses} resize-none text-white`}
+          className={`${commonClasses} resize-none`}
         />
       ) : (
         <input
@@ -55,12 +54,12 @@ const FormField : React.FC<FormFieldProps>  = ({
           onChange={onChange}
           onFocus={() => setIsFocused(true)}
           onBlur={() => setIsFocused(false)}
-          className={`${commonClasses} text-white`}
+          className={`${commonClasses}`}
         />
       )}
 
       {isFocused && (
-        <div className="absolute inset-0 rounded-lg pointer-events-none bg-gradient-to-r from-orange-500/5 to-orange-600/5" />
+        <div className="absolute inset-0 rounded-lg pointer-events-none" />
       )}
 
     </div>

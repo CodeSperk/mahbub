@@ -21,17 +21,15 @@ const RoutPages = ({ href, label, icon }: Props) => {
 
   const isActive = pathName === href;
   return (
-   
     <button
-      className={`text-xl text-white  hover:bg-[#FFB400] p-3 rounded-full ${
-        isActive ? "bg-[#FFB400]" : "bg-[#261f0e]"
+      className={`text-xl hover:bg-highlight p-3 rounded-full ${
+        isActive ? "bg-highlight" : "bg-[#261f0e]"
       }`}
       onClick={handleClick}
     >
       {/* <span className="hidden hover:block">{label}</span> */}
       {icon} <span className="hidden">{label}</span>
     </button>
-
   );
 };
 

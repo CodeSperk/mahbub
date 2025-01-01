@@ -26,8 +26,8 @@ const FAQ : React.FC = () => {
         gridTemplateRows: `repeat(4, minmax(0, 1fr))`
       }}>
       <div className='space-y-4'>
-        <h3 className='text-5xl font-bold text-primary'>FAQs About Me</h3>
-        <p className='text-secondary text-2xl'>Get quick answers to your most pressing questions.</p>
+        <h3 className='text-5xl font-bold '>FAQs About Me</h3>
+        <p className='text-2xl'>Get quick answers to your most pressing questions.</p>
       </div>
 
       {
@@ -53,8 +53,7 @@ const FAQ : React.FC = () => {
           currentPage={currentPage}
           totalPages={totalPages}
           onPageChange={setCurrentPage}
-          /> 
-       
+          />
         </div>
       </div>
 

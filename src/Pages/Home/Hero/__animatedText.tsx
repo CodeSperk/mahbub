@@ -37,7 +37,7 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({
   return (
        <h5> Currently specializing in {" "}  <br className="lg:hidden"/>
         <span className={`
-            text-primary
+            text-highlight
             font-bold
             transition-opacity duration-500
             ${isVisible ? 'opacity-100' : 'opacity-0'}

@@ -40,147 +40,148 @@ const project = {
   admin: ["admin@techhub.com", "admin123"],
 };
 
+const linkStyles =
+  "px-4 py-2 font-bold rounded-md bg-button hover:bg-button-hover transition-colors flex items-center gap-2 text-sm";
+
 const ProjectDetailsView = () => {
   return (
-    <div className="min-h-screen page-bg py-10">
-    <div className="max-width">
-      <header className="overflow-hidden w-full h-[40vh] md:h-[60vh] lg:h-[70vh] text-white ">
-        <Image
-          src={project.img[0]}
-          alt={project.title}
-          width={800}
-          height={450}
-          className="rounded-md w-full"
-          priority
-        />
-      </header>
+    <div className="min-h-screen bg-page-bg py-10">
+      <div className="max-width">
+        <header className="overflow-hidden w-full h-[320px] md:h-[480px] lg:h-[70vh]">
+          <Image
+            src={project.img[0]}
+            alt={project.title}
+            width={800}
+            height={450}
+            className="rounded-md w-full"
+            priority
+          />
+        </header>
 
-      <div className="">
-        <div className="py-6">
-          <h1 className="text-4xl font-bold text-white mb-8">
-            {project.title}
-          </h1>
-
-          {/* Links and Credentials Section */}
-          <div className="flex flex-col gap-4 mb-8">
-            {/* Source Links */}
-            <div className="flex flex-wrap gap-4">
-             
-              <GlowingBtn
-              href={project.liveLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-row px-10"
-              icon={<FaExternalLinkAlt/>}
-              >
-                Live Demo
-              </GlowingBtn>
-              <Link
-                href={project.clientRepo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors flex items-center gap-2"
-              >
-                <FaGithub className="w-5 h-5" />
-                Client Source
-              </Link>
-              <Link
-                href={project.serverRepo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors flex items-center gap-2"
-              >
-                <FaGithub className="w-5 h-5" />
-                Server Source
-              </Link>
-            </div>
-
-            {/* Admin Credentials */}
-            <div className="p-4 bg-gray-800 rounded-lg">
-              <h3 className="text-white font-semibold mb-2">
-                Admin Credentials
-              </h3>
-              <div className="space-y-1">
-                <p className="text-gray-300">
-                  Email: <span className="text-white">{project.admin[0]}</span>
-                </p>
-                <p className="text-gray-300">
-                  Password:{" "}
-                  <span className="text-white">{project.admin[1]}</span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <hr />
-        </div>
-
-        <div className="flex flex-col lg:flex-row gap-8 mt-10">
-          <div className="text-white space-y-8">
-            {/* Overview Section */}
-            <div>
-              <h2 className="text-3xl font-semibold mb-3 border-l-4 border-[#FFB400] pl-4">Overview</h2>
-              <p className="text-xl text-secondary leading-relaxed">{project.description}</p>
-            </div>
-
-             {/* Technologies Used Section */}
-             {project.technologies?.length > 0 && (
+        <div className="">
+          <div className="py-6">
+            <div className="flex flex-col md:flex-row justify-between gap-4 mb-8">
               <div>
-                <h2 className="text-3xl font-semibold mb-3 border-l-4 border-[#FFB400] pl-4">
-                  Technologies Used
-                </h2>
-                <div className="flex flex-wrap gap-2 text-secondary">
-                  {project.technologies.map((tech, index) => (
-                    <span
-                      key={index}
-                      className="px-3 py-1 bg-gray-800 rounded-full"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+                <h1 className="text-4xl font-bold mb-8">{project.title}</h1>
+                <div className="flex items-center flex-wrap gap-4">
+                  <Link
+                    href={project.liveLink}
+                    target="_blank"
+                    className={linkStyles}
+                  >
+                    Live Link
+                    <FaExternalLinkAlt className="w-5 h-5" />
+                  </Link>
+
+                  <Link
+                    href={project.clientRepo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={linkStyles}
+                  >
+                    <FaGithub className="w-5 h-5" />
+                    Client
+                  </Link>
+
+                  <Link
+                    href={project.serverRepo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={linkStyles}
+                  >
+                    <FaGithub className="w-5 h-5" />
+                    Server
+                  </Link>
                 </div>
               </div>
-            )}
 
-            {/* Features Section */}
-            {project.features?.length > 0 && (
-              <div>
-                <h2 className="text-3xl font-semibold mb-3 border-l-4 border-[#FFB400] pl-4">Features ✨</h2>
-                <ul className="list-disc list-inside space-y-2 text-secondary text-xl">
-                  {project.features.map((feature, index) => (
-                    <li key={index}>{feature}</li>
-                  ))}
-                </ul>
+              {/* Admin Credentials */}
+              <div className="p-4 bg-card-bg rounded-lg">
+                <h3 className="font-semibold mb-2">Admin Credentials</h3>
+                <div className="space-y-1">
+                  <p className="">
+                    Email: <span className="">{project.admin[0]}</span>
+                  </p>
+                  <p className="0">
+                    Password: <span className="">{project.admin[1]}</span>
+                  </p>
+                </div>
               </div>
-            )}
-
-            {/* Challenges Section */}
-            {project.challenges?.length > 0 && (
-              <div>
-                <h2 className="text-3xl font-semibold mb-3 border-l-4 border-[#FFB400] pl-4">Challenges</h2>
-                <ul className="list-disc list-inside space-y-2 text-secondary text-xl">
-                  {project.challenges.map((challenge, index) => (
-                    <li key={index}>{challenge}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
-
-           
+            </div>
+            <hr />
           </div>
 
-          <div className="">
-            <Image
-              src={project.img[0]}
-              alt={project.title}
-              width={800}
-              height={450}
-              className="rounded-lg"
-              priority
-            />
+          <div className="flex flex-col lg:flex-row gap-8">
+            <div className="space-y-10 md:space-y-12">
+              {/* Overview Section */}
+              <div>
+                <h2 className="text-3xl font-semibold mb-3 border-l-4 border-highlight pl-4">
+                  Overview
+                </h2>
+                <p className="text-xl leading-relaxed pt-2">{project.description}</p>
+              </div>
+
+              {/* Technologies Used Section */}
+              {project.technologies?.length > 0 && (
+                <div>
+                  <h2 className="text-3xl font-semibold mb-3 border-l-4 border-highlight pl-4">
+                    Technologies Used
+                  </h2>
+                  <div className="flex flex-wrap gap-4 pt-2">
+                    {project.technologies.map((tech, index) => (
+                      <span
+                        key={index}
+                        className="px-4 py-1 shadow-sm border-t border-highlight shadow-highlight rounded-full"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Features Section */}
+              {project.features?.length > 0 && (
+                <div>
+                  <h2 className="text-3xl font-semibold mb-3 border-l-4 border-highlight pl-4">
+                    Features ✨
+                  </h2>
+                  <ul className="list-disc list-inside space-y-2 text-xl pl-6 pt-2">
+                    {project.features.map((feature, index) => (
+                      <li key={index}>{feature}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* Challenges Section */}
+              {project.challenges?.length > 0 && (
+                <div>
+                  <h2 className="text-3xl font-semibold mb-3 border-l-4 border-highlight pl-4">
+                    Challenges
+                  </h2>
+                  <ul className="list-disc list-inside space-y-2 text-xl pl-6 pt-2">
+                    {project.challenges.map((challenge, index) => (
+                      <li key={index}>{challenge}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+
+            <div className="">
+              <Image
+                src={project.img[0]}
+                alt={project.title}
+                width={800}
+                height={450}
+                className="rounded-lg"
+                priority
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
   );
 };

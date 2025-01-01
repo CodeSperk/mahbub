@@ -91,7 +91,7 @@ export const projects: Project[] = [
     serverRepo: "https://github.com/CodeSperk/taskmaster-server",
     liveLink: "https://taskmaster-pm.web.app",
     img: [
-      "/projects/project-slider-img-1.webp",
+      "/projects/electroautomation-full.webp",
       "/projects/project-slider-img-1.webp",
       "/projects/project-slider-img-1.webp"
     ],
@@ -119,7 +119,7 @@ export const projects: Project[] = [
     serverRepo: "https://github.com/CodeSperk/healthtrack-server",
     liveLink: "https://healthtrack-fitness.web.app",
     img: [
-      "/projects/project-slider-img-1.webp",
+      "/projects/travel_full.jpg",
       "/projects/project-slider-img-1.webp",
       "/projects/project-slider-img-1.webp"
     ],
@@ -147,7 +147,7 @@ export const projects: Project[] = [
     serverRepo: "https://github.com/CodeSperk/edulearn-server",
     liveLink: "https://edulearn-platform.web.app",
     img: [
-      "/projects/project-slider-img-1.webp",
+      "/projects/furni_mart_full.jpg",
       "/projects/project-slider-img-1.webp",
       "/projects/project-slider-img-1.webp"
     ],
@@ -175,7 +175,7 @@ export const projects: Project[] = [
     serverRepo: "https://github.com/CodeSperk/realestate-server",
     liveLink: "https://realestate-manager.web.app",
     img: [
-      "/projects/project-slider-img-1.webp",
+      "/projects/furni_full.jpg",
       "/projects/project-slider-img-1.webp",
       "/projects/project-slider-img-1.webp"
     ],

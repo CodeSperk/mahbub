@@ -3,7 +3,7 @@ import ProfilePhoto from "./_profilePhoto";
 
 const AboutMe = () => {
   return (
-    <section className="section-gap flex flex-col lg:flex-row gap-16 items-center justify-center">
+    <section className="pt-6 md:pt-10 flex flex-col lg:flex-row gap-16 items-center justify-center">
       <ProfilePhoto />
       <AboutContent />
     </section>

@@ -10,16 +10,16 @@ const FeaturedProjects = () => {
   );
 
   return (
-    <section className="page-bg py-2">
-    <div className="max-width section-gap text-white w-full space-y-10 md:space-y-0 md:grid  md:grid-cols-2 grid-rows-4 gap-12 xl:gap-20">
+    <section className="bg-page-bg py-2">
+    <div className="max-width section-gap w-full space-y-10 md:space-y-0 md:grid  md:grid-cols-2 grid-rows-4 gap-12 xl:gap-20">
       <div className="">
-        <h2 className="text-5xl font-bold text-primary">Notable Projects from My Journey</h2>
-        <p className="text-secondary mt-4 text-xl">
+        <h2 className="text-5xl font-bold ">Notable Projects from My Journey</h2>
+        <p className="mt-4 text-xl">
           Here are some of my projects that I have worked on.
         </p>
         <Link
           href="/portfolio"
-          className="text-primary hover:text-[#95762e] flex items-center gap-2 mt-4 transition-colors text-xl"
+          className="text-highlight hover:text-button-hover flex items-center gap-2 mt-4 transition-colors text-xl"
         >
           Explore more
           <span className="text-xl">→</span>

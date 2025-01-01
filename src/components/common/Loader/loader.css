@@ -8,18 +8,17 @@
   font-family: sans-serif;
   font-weight: 900;
   background: conic-gradient(
-    #4f2c4f 0 25%,
-    #FFB400 25% 50%,
-    #feefe7 50% 75%,
-    #FFB400 75% 100%
+    #4f2c4f 0% 30%,
+    #e09c3d 30% 60%,
+    #ffe9d6 60% 85%,
+    #d27742 85% 100%
   );
   background-size: 200% 200%;
-  animation: animateBackground 2s ease-in-out infinite;
+  animation: animateBackground 3s ease-in-out infinite;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
 }
-
 
 @keyframes animateBackground {
   33% {

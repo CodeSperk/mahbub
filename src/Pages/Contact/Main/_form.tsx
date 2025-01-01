@@ -66,9 +66,9 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="mt-10 lg:mt-16 w-full p-6 md:p-8 rounded-md bg-[#140613]">
+    <div className="mt-10 lg:mt-16 w-full p-6 md:p-8 rounded-md bg-card-bg">
       {showSuccess && (
-        <div className="mb-4 p-4 bg-[#140613] text-white rounded-lg flex items-center gap-2">
+        <div className="mb-4 p-4 bg-[#140613] rounded-lg flex items-center gap-2">
           <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
             <path
               fillRule="evenodd"
@@ -115,9 +115,7 @@ const ContactForm: React.FC = () => {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="bg-[#FFB400] hover:bg-[#896102] text-white hover:text-secondary font-medium py-3 px-6 rounded-lg 
-               transition duration-200 flex items-center gap-2 disabled:opacity-50 
-               disabled:cursor-not-allowed hover:shadow-[0_0_20px_rgba(249,115,22,0.3)]"
+          className="glow-button text-sm flex gap-2"
         >
           {isSubmitting ? (
             <div className="w-5 h-5 border-t-2 border-white rounded-full animate-spin" />

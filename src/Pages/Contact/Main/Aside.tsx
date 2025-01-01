@@ -1,56 +1,41 @@
-import Link  from "next/link"
-import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import Link from "next/link";
+import { contactInfo } from "../_helpers/ContactInfo";
+import { socialIcon } from "../_helpers/SocialIcon";
+
+const asideCardStyles =
+  "bg-card-bg  space-y-6 px-[30px] md:px-[60px] py-[50px] md:py-[80px] rounded-sm ";
 
 const Aside = () => {
   return (
     <aside className="w-full lg:w-[390px] lg:-mt-[320px] space-y-10 lg:space-y-16 xl:gap-20">
-    <div className="bg-[#140613]  space-y-6 px-[30px] md:px-[60px] py-[50px] md:py-[80px] rounded-sm ">
-      <div className="bg-[#13040B] p-8 rounded-sm space-y-4 md:text-lg">
-        <p>Phone:</p>
-        <p className="text-secondary">015221251146</p>
+      <div className={asideCardStyles}>
+        {contactInfo.map((contact, idx) => (
+          <div
+            key={idx}
+            className="bg-page-bg p-8 rounded-sm space-y-4 md:text-lg"
+          >
+            <h6>{contact.title}</h6>
+            <p className="">{contact.info}</p>
+          </div>
+        ))}
       </div>
-      <div className="bg-[#13040B] p-8 rounded-sm space-y-4 md:text-lg">
-        <p>Email:</p>
-        <p className="text-secondary">mahbub0692@gmail.com</p>
-      </div>
-      <div className="bg-[#13040B] p-8 rounded-sm space-y-4 md:text-lg">
-        <p>Website:</p>
-        <Link href="http://localhost:3000" className="text-secondary hover:text-blue-900 hover:underline">portfolio@mahbub.com</Link>
-      </div>
-      <div className="bg-[#13040B] p-8 rounded-sm space-y-4 md:text-lg">
-        <p>Address:</p>
-        <p className="text-secondary">Dhaka, Bangladesh</p>
-      </div>
-    </div>
 
-    <div className="bg-[#140613] border-2 border-[#20171f] p-8 rounded-sm md:text-lg px-[30px] md:px-[60px] py-[50px] md:py-[80px] space-y-8">
-      <h3 className="text-4xl">Follow Me</h3>
-
-      <div className="flex gap-4 text-lg">
-        <Link
-          href="https://www.linkedin.com/in/mahbub692"
-          target="_blank"
-          className="p-4 border-2 rounded-full border-gray-700 hover:bg-gray-700"
-        >
-          <FaLinkedinIn />
-        </Link>
-        <Link
-          href="https://github.com/CodeSperk"
-          target="_blank"
-          className="p-4 border-2 rounded-full border-gray-700 hover:bg-gray-700"
-        >
-          <FaGithub />
-        </Link>
-        <Link
-          href="https://www.facebook.com/mahbub0692"
-          target="_blank"
-          className="p-4 border-2 rounded-full border-gray-700 hover:bg-gray-700"
-        >
-          <FaFacebookF />
-        </Link>
+      <div className={asideCardStyles}>
+        <h3 className="text-4xl">Find Me In</h3>
+        <div className="flex gap-4 text-xl">
+          {socialIcon.map((icon, idx) => (
+            <Link
+              key={idx}
+              href={icon.href}
+              target="_black"
+              className="p-3 rounded-full bg-icon-hover-bg hover:scale-110 hover:text-highlight border-2 border-highlight duration-300"
+            >
+              <icon.icon />
+            </Link>
+          ))}
+        </div>
       </div>
-    </div>
-  </aside>
+    </aside>
   );
 };
 

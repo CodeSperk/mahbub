@@ -5,9 +5,9 @@ import GlowingBtn from "../../../components/shared/GlowingBtn";
 
 const TextContents = () => {
   return (
-    <section className="max-width min-h-screen text-[#fefef5] py-28 flex flex-col justify-center gap-4 xl:gap-5 text-center md:text-start">
+    <section className="max-width min-h-screen py-28 flex flex-col justify-center gap-4 xl:gap-5 text-center md:text-start">
       <div className="leading-none">
-        <h5 className="text-primary text-2xl md:text-[28px]">
+        <h5 className="text-2xl md:text-[28px]">
           Hey there!, I&apos;m-
         </h5>
         <h1 className="text-[48px] md:text-7xl xl:text-[96px] font-bold">
@@ -22,7 +22,7 @@ const TextContents = () => {
 
       <h5 className="text-2xl md:text-[28px] xl:text-[36px] leading-[40px]">
         Software Engineer .{" "}
-        <span className="text-secondary">
+        <span className="">
           A Self-taught web developer <br className="hidden md:block" /> with an
           interest in MERN Stack Development
         </span>
@@ -32,7 +32,7 @@ const TextContents = () => {
         <a
           href="https://github.com/CodeSperk"
           target="_blank"
-          className="p-2 text-2xl text-[#4d204d] bg-[#fdcde5] rounded-md hover:scale-110 duration-300"
+          className="p-2 text-2xl bg-icon-bg rounded-md hover:bg-icon-hover-bg hover:scale-105 duration-300"
         >
           <FaGithub className="duration-500" />
         </a>
@@ -42,7 +42,7 @@ const TextContents = () => {
         <a
           href="https://www.linkedin.com/in/mahbub692"
           target="_blank"
-          className="p-2 text-2xl text-[#4d204d] bg-[#fdcde5] rounded-md hover:scale-110 duration-300"
+          className="p-2 text-2xl bg-icon-bg rounded-md hover:bg-icon-hover-bg hover:scale-105  duration-300"
         >
           <FaLinkedin className="duration-500" />
         </a>
