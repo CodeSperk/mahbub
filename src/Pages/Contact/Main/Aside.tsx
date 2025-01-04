@@ -12,23 +12,23 @@ const Aside = () => {
         {contactInfo.map((contact, idx) => (
           <div
             key={idx}
-            className="bg-page-bg p-8 rounded-sm space-y-4 md:text-lg"
+            className="bg-page-bg p-8 rounded-sm space-y-4"
           >
-            <h6>{contact.title}</h6>
-            <p className="">{contact.info}</p>
+            <h6 className="font-semibold">{contact.title}</h6>
+            <p>{contact.info}</p>
           </div>
         ))}
       </div>
 
       <div className={asideCardStyles}>
-        <h3 className="text-4xl">Find Me In</h3>
+        <h3>Find Me In</h3>
         <div className="flex gap-4 text-xl">
           {socialIcon.map((icon, idx) => (
             <Link
               key={idx}
               href={icon.href}
               target="_black"
-              className="p-3 rounded-full bg-icon-hover-bg hover:scale-110 hover:text-highlight border-2 border-highlight duration-300"
+              className="p-3 rounded-full bg-icon-hover-bg hover:scale-110 hover:text-highlight border-2 border-button duration-300"
             >
               <icon.icon />
             </Link>

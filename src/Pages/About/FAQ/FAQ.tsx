@@ -26,8 +26,8 @@ const FAQ : React.FC = () => {
         gridTemplateRows: `repeat(4, minmax(0, 1fr))`
       }}>
       <div className='space-y-4'>
-        <h3 className='text-5xl font-bold '>FAQs About Me</h3>
-        <p className='text-2xl'>Get quick answers to your most pressing questions.</p>
+        <h2>FAQs About Me</h2>
+        <p className='text-base md:text-lg lg:text-xl'>Get quick answers to your most pressing questions.</p>
       </div>
 
       {

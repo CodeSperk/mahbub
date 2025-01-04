@@ -11,7 +11,7 @@ const AboutContent = () => {
       {/* tabs */}
       <div className="mb-8 inline-flex rounded-lg border-2 border-[#4d204d] bg-transparent">
         <button
-          className={`px-6 py-2 rounded-md text-sm font-medium transition-colors ${
+          className={`px-6 py-2 rounded-md text-sm md:text-base font-medium transition-colors ${
             activeTab === "about"
               ? "bg-[#4d204d]"
               : "hover:text-[#4d204d]"
@@ -21,7 +21,7 @@ const AboutContent = () => {
           About
         </button>
         <button
-          className={`px-6 py-2 rounded-md text-sm font-medium transition-colors ${
+          className={`px-6 py-2 rounded-md text-sm md:text-base font-medium transition-colors ${
             activeTab === "skills"
               ? "bg-[#4d204d]"
               : "hover:text-[#4d204d]"
@@ -36,7 +36,7 @@ const AboutContent = () => {
       <div className="lg:min-h-[396px]">
         {activeTab === "about" ? (
           <div className="prose prose-purple max-w-none">
-            <p className="leading-relaxed text-lg md:text-xl">
+            <p>
               I am a self-taught web developer with{" "}
               <span className="text-highlight font-bold">
                 1+ year of professional experience.

@@ -33,7 +33,7 @@ const ProfilePhoto = () => {
           href="/mahbub.pdf"
           target="_blank"
           download="Mahbubur_Rahman_Resume"
-          className="w-full"
+          className="w-full md:text-lg"
         >
           Resume
         </GlowingBtn>

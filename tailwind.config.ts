@@ -6,7 +6,11 @@ export default {
     "text-secondary",
     "text-primary",
     "bg-[#FFB400]", // Add any dynamically generated classes here
-    "hover:text-[#FFB400]", // Include all variations
+    "hover:text-[#FFB400]",
+    "mainHeading",
+    "secondHeading",
+    "midHeading",
+    "leastHeading",
   ],
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -21,7 +25,7 @@ export default {
         secondary: "#CCCCCC",
         highlight: "#FFB400",
         button: "#4d204d",
-        "button-hover": "#A22A6F",
+        "button-hover": "#6c2c6c",
         shadow: "0px 5px 22px rgba(0, 0, 0, 0.2)",
       },
       backgroundImage: {

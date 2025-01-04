@@ -13,8 +13,8 @@ const FeaturedProjects = () => {
     <section className="bg-page-bg py-2">
     <div className="max-width section-gap w-full space-y-10 md:space-y-0 md:grid  md:grid-cols-2 grid-rows-4 gap-12 xl:gap-20">
       <div className="">
-        <h2 className="text-5xl font-bold ">Notable Projects from My Journey</h2>
-        <p className="mt-4 text-xl">
+        <h2>Notable Projects from My Journey</h2>
+        <p className="mt-2 text-xl">
           Here are some of my projects that I have worked on.
         </p>
         <Link

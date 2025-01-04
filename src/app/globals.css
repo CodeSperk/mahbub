@@ -3,22 +3,50 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Colors */
 body{
-  font-family: "Inter", serif;
+  font-family: "Poppins", serif;
   color: #B3B3B3;
 }
-.font-poppins{
-  font-family: "Poppins", serif;
+.font-Inter{
+  font-family: "Inter", serif;
 }
 
 .max-width{
   @apply max-w-[1400px] mx-auto px-4 md:px-12 lg:px-20 xl:px-24
 }
-
 .section-gap{
   @apply mt-16 md:mt-24 lg:mt-28
 }
 p{
-  @apply text-secondary
+  @apply text-secondary text-base md:text-lg leading-relaxed
+}
+
+/* Heading styles */
+h1, h2, h3{
+  @apply font-bold leading-snug font-Inter
+}
+h4, h5, h6 {
+  @apply leading-tight font-Inter
+}
+h1{
+  @apply text-5xl md:text-6xl lg:text-7xl
+}
+h2 {
+  @apply text-3xl md:text-4xl lg:text-5xl;
+}
+
+h3 {
+  @apply text-2xl md:text-3xl lg:text-4xl;
+}
+
+h4 {
+  @apply text-xl md:text-2xl lg:text-[28px] font-medium;
+}
+
+h5 {
+  @apply text-lg md:text-xl lg:text-2xl;
+}
+
+h6 {
+  @apply text-base md:text-lg lg:text-xl;
 }

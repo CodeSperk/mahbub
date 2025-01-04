@@ -28,14 +28,14 @@ const FormField : React.FC<FormFieldProps>  = ({
     }
     ${
       isFocused
-        ? "border-highlight"
+        ? "border-highlight text-highlight"
         : ""
     }
   `;
 
   return (
     <div className="space-y-2">
-      <label>{label}</label>
+      <label className="text-primary">{label}</label>
       {multiline ? (
         <textarea
           name={name}

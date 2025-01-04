@@ -41,7 +41,7 @@ const project = {
 };
 
 const linkStyles =
-  "px-4 py-2 font-bold rounded-md bg-button hover:bg-button-hover transition-colors flex items-center gap-2 text-sm";
+  "px-4 py-2 font-medium rounded-md bg-button hover:bg-button-hover transition-colors flex items-center gap-2 text-sm ";
 
 const ProjectDetailsView = () => {
   return (
@@ -62,7 +62,7 @@ const ProjectDetailsView = () => {
           <div className="py-6">
             <div className="flex flex-col md:flex-row justify-between gap-4 mb-8">
               <div>
-                <h1 className="text-4xl font-bold mb-8">{project.title}</h1>
+                <h3 className="mb-8">{project.title}</h3>
                 <div className="flex items-center flex-wrap gap-4">
                   <Link
                     href={project.liveLink}
@@ -70,7 +70,7 @@ const ProjectDetailsView = () => {
                     className={linkStyles}
                   >
                     Live Link
-                    <FaExternalLinkAlt className="w-5 h-5" />
+                    <FaExternalLinkAlt />
                   </Link>
 
                   <Link
@@ -79,7 +79,7 @@ const ProjectDetailsView = () => {
                     rel="noopener noreferrer"
                     className={linkStyles}
                   >
-                    <FaGithub className="w-5 h-5" />
+                    <FaGithub className="w-4 h-4" />
                     Client
                   </Link>
 
@@ -89,7 +89,7 @@ const ProjectDetailsView = () => {
                     rel="noopener noreferrer"
                     className={linkStyles}
                   >
-                    <FaGithub className="w-5 h-5" />
+                    <FaGithub className="w-4 h-4" />
                     Server
                   </Link>
                 </div>
@@ -97,13 +97,13 @@ const ProjectDetailsView = () => {
 
               {/* Admin Credentials */}
               <div className="p-4 bg-card-bg rounded-lg">
-                <h3 className="font-semibold mb-2">Admin Credentials</h3>
+                <h6 className="font-semibold mb-2">Admin Credentials</h6>
                 <div className="space-y-1">
-                  <p className="">
-                    Email: <span className="">{project.admin[0]}</span>
+                  <p>
+                    Email: {project.admin[0]}
                   </p>
-                  <p className="0">
-                    Password: <span className="">{project.admin[1]}</span>
+                  <p>
+                    Password: {project.admin[1]}
                   </p>
                 </div>
               </div>
@@ -115,23 +115,23 @@ const ProjectDetailsView = () => {
             <div className="space-y-10 md:space-y-12">
               {/* Overview Section */}
               <div>
-                <h2 className="text-3xl font-semibold mb-3 border-l-4 border-highlight pl-4">
+                <h5 className="font-semibold mb-3 border-l-4 border-highlight pl-4">
                   Overview
-                </h2>
-                <p className="text-xl leading-relaxed pt-2">{project.description}</p>
+                </h5>
+                <p className="pt-2">{project.description}</p>
               </div>
 
               {/* Technologies Used Section */}
               {project.technologies?.length > 0 && (
                 <div>
-                  <h2 className="text-3xl font-semibold mb-3 border-l-4 border-highlight pl-4">
+                  <h5 className="font-semibold mb-3 border-l-4 border-highlight pl-4">
                     Technologies Used
-                  </h2>
+                  </h5>
                   <div className="flex flex-wrap gap-4 pt-2">
                     {project.technologies.map((tech, index) => (
                       <span
                         key={index}
-                        className="px-4 py-1 shadow-sm border-t border-highlight shadow-highlight rounded-full"
+                        className="px-4 py-1 shadow-sm border-t border-highlight shadow-highlight rounded-full text-sm"
                       >
                         {tech}
                       </span>
@@ -143,10 +143,10 @@ const ProjectDetailsView = () => {
               {/* Features Section */}
               {project.features?.length > 0 && (
                 <div>
-                  <h2 className="text-3xl font-semibold mb-3 border-l-4 border-highlight pl-4">
+                  <h5 className="font-semibold mb-3 border-l-4 border-highlight pl-4">
                     Features ✨
-                  </h2>
-                  <ul className="list-disc list-inside space-y-2 text-xl pl-6 pt-2">
+                  </h5>
+                  <ul className="list-disc list-inside space-y-2 pl-6 pt-2 text-secondary text-base md:text-lg leading-relaxed">
                     {project.features.map((feature, index) => (
                       <li key={index}>{feature}</li>
                     ))}
@@ -157,10 +157,10 @@ const ProjectDetailsView = () => {
               {/* Challenges Section */}
               {project.challenges?.length > 0 && (
                 <div>
-                  <h2 className="text-3xl font-semibold mb-3 border-l-4 border-highlight pl-4">
+                  <h5 className="font-semibold mb-3 border-l-4 border-highlight pl-4">
                     Challenges
-                  </h2>
-                  <ul className="list-disc list-inside space-y-2 text-xl pl-6 pt-2">
+                  </h5>
+                  <ul className="list-disc list-inside space-y-2 pl-6 pt-2 text-secondary text-base md:text-lg leading-relaxed">
                     {project.challenges.map((challenge, index) => (
                       <li key={index}>{challenge}</li>
                     ))}

@@ -30,13 +30,13 @@ const TechStack = () => {
         </div>
 
         {/* heading */}
-        <div>
-          <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-4">
+        <div className="text-center space-y-2">
+          <h3>
             Building web apps with modern technologies
           </h3>
-          <h4 className="text-xl text-center">
+          <h5>
             with a focus on creativity, functionality, and impact.
-          </h4>
+          </h5>
 
         </div>
 

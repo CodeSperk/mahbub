@@ -35,16 +35,15 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({
   }, [texts, interval, fadeTime])
 
   return (
-       <h5> Currently specializing in {" "}  <br className="lg:hidden"/>
+       <h4> Currently specializing in {" "}  <br className="lg:hidden"/>
         <span className={`
-            text-highlight
-            font-bold
+            text-highlight font-bold
             transition-opacity duration-500
             ${isVisible ? 'opacity-100' : 'opacity-0'}
           `}>
           {texts[currentIndex]}
         </span>
-      </h5>
+      </h4>
     );
 };
 

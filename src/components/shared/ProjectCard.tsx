@@ -41,9 +41,9 @@ const ProjectCard = ({ project }: { project: Project }) => {
 
       <div className="space-y-2 pr-4 mb-8 px-12 lg:px-16 xl:px-20">
         <Link href={`/portfolio/${id}`}>
-        <h3 className="text-2xl font-bold hover:text-highlight">{title}</h3>
+        <h4 className="hover:text-highlight">{title}</h4>
         </Link>
-        <p className="text-xl">
+        <p>
           Charity/ Fund Rising / Non profit
         </p>
       </div>
