@@ -1,5 +1,4 @@
 // components/ProjectDetailsView.tsx
-import GlowingBtn from "@/components/shared/GlowingBtn";
 import Image from "next/image";
 import Link from "next/link";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
