@@ -64,14 +64,14 @@ const MobileNav = () => {
               <IoMdClose className="text-2xl" />
             </button>
           </div>
-          <ul className="flex flex-col gap-6 py-4 px-6">
+          <ul className="flex flex-col gap-6 py-4 items-center">
             {menuItems.map((item, idx) => (
-              <li key={idx}>
+              <li key={idx} className="w-full text-center">
                 <Link
                   href={item.href}
-                  className={`block px-4 py-2 ${
+                  className={`block py-2 ${
                     pathName === item.href
-                      ? "text-highlight"
+                      ? " text-highlight border-r-2 px-4 border-highlight"
                       : "hover:text-highlight"
                   }`}
                   onClick={toggleDrawer}
