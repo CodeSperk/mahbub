@@ -3,7 +3,7 @@ import HeroSection from "@/Pages/Home/Hero/Hero";
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="">
       <HeroSection />
       {/* <FeaturedProjects /> */}
     </div>

@@ -13,8 +13,8 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-black opacity-80"></div>
       </div>
 
-      <div className='relative h-full w-full'>
-      <FloatingIcons />
+      <div className='relative w-full'>
+      {/* <FloatingIcons /> */}
       <TextContents />
       </div>
     </section>
