@@ -25,7 +25,7 @@ const TextContents = () => {
         Software Engineer .{" "}
         <span className="">
           A Self-taught web developer <br className="hidden md:block" /> with an
-          interest in MERN Stack Development
+          interest in MERN Stack Applications
         </span>
       </h4>
 

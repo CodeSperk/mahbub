@@ -17,7 +17,7 @@ const PortfolioPage = () => {
   return (
     <div className="bg-page-bg min-h-screen pt-6">
       <div className="max-width">
-        <PageTitle bg="Works" title1="My" title2="Portfolio" />
+        <PageTitle bg="Portfolio" title1="My" title2="Projects" />
 
         <section className="pt-4 md:pt-10 grid gap-12 lg:gap-16 grid-cols-1 md:grid-cols-2 ">
           {projects?.map((project) => (

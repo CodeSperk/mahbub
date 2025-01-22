@@ -7,7 +7,7 @@ const ContactPage = () => {
   return (
     <div className="bg-page-bg min-h-screen pt-6">
      <div className="max-width">
-     <PageTitle bg="Contact" title1="Get In" title2="touch" />
+     <PageTitle bg="Contact" title1="Reach" title2="out" />
       <Banner/>
       <main className="section-gap flex flex-col-reverse lg:flex-row justify-between gap-10 lg:gap-16">
         <Aside/>
