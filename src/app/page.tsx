@@ -1,11 +1,11 @@
-import FeaturedProjects from "@/Pages/Home/Featured/Featured";
+// import FeaturedProjects from "@/Pages/Home/Featured/Featured";
 import HeroSection from "@/Pages/Home/Hero/Hero";
 
 const HomePage = () => {
   return (
     <div>
       <HeroSection />
-      <FeaturedProjects />
+      {/* <FeaturedProjects /> */}
     </div>
   );
 };
