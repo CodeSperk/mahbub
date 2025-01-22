@@ -54,7 +54,7 @@ const MobileNav = () => {
 
         {/* Drawer Panel */}
         <div
-          className={`absolute top-0 left-0 w-3/4 max-w-xs h-full bg-page-bg shadow-lg text-white transform transition-transform duration-300 ${
+          className={`fixed top-0 left-0 w-3/4 max-w-xs h-full bg-page-bg shadow-lg text-white transform transition-transform duration-300 ${
             isDrawerOpen ? "translate-x-0" : "-translate-x-full"
           } overflow-y-auto scroll-smooth`}
         >
