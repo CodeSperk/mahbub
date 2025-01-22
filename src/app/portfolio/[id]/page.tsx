@@ -1,4 +1,3 @@
-"use client"
 import { projects } from "@/Pages/Portfolio/__helper";
 import { Project } from "@/types/types";
 import Image from "next/image";
@@ -6,29 +5,22 @@ import Link from "next/link";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 interface ProjectDetailsViewProps {
-  params: {
-    id: string;
-  };
+  params: Promise<{ id: string }>;
 }
 
 const linkStyles =
   "px-4 py-2 font-medium rounded-md bg-button hover:bg-button-hover transition-colors flex items-center gap-2 text-sm ";
 
-const ProjectDetailsView = ({params} : ProjectDetailsViewProps) => {
+const ProjectDetailsView = async ({ params }: ProjectDetailsViewProps) => {
+  const { id } = await params;
 
-const project = projects.find((project: Project) => project.id === params.id);
-if (!project) {
- return (
-  <div>
-    Project not found
-  </div>
- )
-}
+  const project = projects.find((project: Project) => project.id === id);
+  if (!project) {
+    return <div>Project not found</div>;
+  }
 
-const { title, img, liveLink, clientRepo, serverRepo, admin, description, technologies, challenges, features } = project;
-console.log(project);
-  
-console.log("Project ID", params.id);
+  const { title, img, liveLink, clientRepo, serverRepo, admin, description, technologies, challenges, features } = project;
+  console.log("Project ID", id);
 
   return (
     <div className="min-h-screen bg-page-bg py-10">
@@ -44,6 +36,7 @@ console.log("Project ID", params.id);
           />
         </header>
 
+        {/* Other content remains unchanged */}
         <div className="">
           <div className="py-6">
             <div className="flex flex-col md:flex-row justify-between gap-4 mb-8">

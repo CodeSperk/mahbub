@@ -34,7 +34,7 @@ const MobileNav = () => {
   ];
 
   return (
-    <button onClick={toggleDrawer} aria-label="Open Menu">
+    <div onClick={toggleDrawer} aria-label="Open Menu">
       <FiMenu className="text-2xl" />
 
       {/* Mobile Drawer */}
@@ -98,7 +98,7 @@ const MobileNav = () => {
           </ul>
         </div>
       </div>
-    </button>
+    </div>
   );
 };
 
