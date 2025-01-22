@@ -31,7 +31,7 @@ export default {
       backgroundImage: {
         'page-bg': "linear-gradient(to right, #0F050E, #13040B, #0F050E)",
         'card-bg': "linear-gradient(to right, #251729, #3A1E3B, #251729)"
-      },
+      }
     },
   },
   plugins: [],
