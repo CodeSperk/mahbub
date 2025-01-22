@@ -1,5 +1,5 @@
 import React from 'react';
-// import FloatingIcons from './_FloatingIcons';
+import FloatingIcons from './_FloatingIcons';
 import TextContents from './_TextContents';
 
 const HeroSection = () => {
@@ -14,7 +14,8 @@ const HeroSection = () => {
       </div>
 
       <div className='relative w-full'>
-      {/* <FloatingIcons /> */}
+      
+      <FloatingIcons />
       <TextContents />
       </div>
     </section>

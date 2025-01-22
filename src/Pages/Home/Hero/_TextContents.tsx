@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const TextContents = () => {
   return (
-    <section className="max-width min-h-screen py-28 flex flex-col justify-center gap-4 xl:gap-5 text-center md:text-start">
+    <section className="max-width min-h-screen py-10 lg:py-20 flex flex-col justify-center gap-4 xl:gap-5 text-center md:text-start">
       <div className="leading-none">
         <h5>
           Hey there!, I&apos;m-

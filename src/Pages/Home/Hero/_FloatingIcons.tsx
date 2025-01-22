@@ -49,7 +49,7 @@ const FloatingIcons: React.FC = () => {
   }, []);
 
   return (
-    <div className="absolute inset-0 pointer-events-none">
+    <div className="absolute top-5 left-5 bottom-5 right-5">
       {ICONS.map((icon, index) => (
         <div 
           key={icon.id}
