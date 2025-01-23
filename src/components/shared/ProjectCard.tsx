@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Project } from "@/Pages/Portfolio/__helper";
-import { p } from "framer-motion/client";
 
 const ProjectCard = ({ project }: { project: Project }) => {
   if (!project) return null;

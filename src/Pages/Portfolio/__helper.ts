@@ -108,5 +108,5 @@ export const projects: Project[] = [
     ],
     technologies: ["React", "Webpack", "MongoDB", "Express"],
     admin: ["********", "******"]
-  }
+  },
 ]
