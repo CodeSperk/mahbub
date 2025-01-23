@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav>
       {/* Mobile device */}
-      <div className="absolute md:hidden z-50 top-0 left-0 text-white w-full max-width flex justify-between items-center py-4 border-b border-gray-500">
+      <div className="absolute md:hidden z-50 top-0 left-0 text-white w-full max-width mx-auto flex justify-between items-center py-4 border-b border-[#300f2d]">
         <h3 className="text-highlight uppercase">Mahbub</h3>
         <MobileNav/>
       </div>

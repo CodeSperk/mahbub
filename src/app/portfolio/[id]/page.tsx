@@ -19,16 +19,15 @@ const ProjectDetailsView = async ({ params }: ProjectDetailsViewProps) => {
     return <div>Project not found</div>;
   }
 
-  const { title, img, liveLink, clientRepo, serverRepo, admin, description, technologies, challenges, features } = project;
   console.log("Project ID", id);
 
   return (
-    <div className="min-h-screen bg-page-bg py-10">
+    <div className="min-h-screen bg-page-bg py-10 pt-28 md:pt-10">
       <div className="max-width">
         <header className="overflow-hidden w-full h-[320px] md:h-[480px] lg:h-[70vh]">
           <Image
-            src={img[0]}
-            alt={title}
+            src={project?.img[0]}
+            alt={project?.title}
             width={800}
             height={450}
             className="rounded-md w-full"
@@ -41,10 +40,10 @@ const ProjectDetailsView = async ({ params }: ProjectDetailsViewProps) => {
           <div className="py-6">
             <div className="flex flex-col md:flex-row justify-between gap-4 mb-8">
               <div>
-                <h3 className="mb-8">{title}</h3>
+                <h3 className="mb-8">{project?.title}</h3>
                 <div className="flex items-center flex-wrap gap-4">
                   <Link
-                    href={liveLink}
+                    href={project?.liveLink}
                     target="_blank"
                     className={linkStyles}
                   >
@@ -52,40 +51,50 @@ const ProjectDetailsView = async ({ params }: ProjectDetailsViewProps) => {
                     <FaExternalLinkAlt />
                   </Link>
 
-                  <Link
-                    href={clientRepo}
+                  
+                    <Link
+                    href={project?.clientRepo}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={linkStyles}
                   >
                     <FaGithub className="w-4 h-4" />
-                    Client
+                    {
+                    project.clientRepo ?  "Client"  : "Privet Resource"
+                  }
                   </Link>
-
-                  <Link
-                    href={serverRepo}
+                 
+                  {
+                    project.serverRepo? 
+                    <Link
+                    href={project?.serverRepo}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={linkStyles}
                   >
                     <FaGithub className="w-4 h-4" />
                     Server
-                  </Link>
+                  </Link> :
+                  ""
+                  }
                 </div>
               </div>
 
               {/* Admin Credentials */}
-              <div className="p-4 bg-card-bg rounded-lg">
+              {
+                project?.admin && 
+                <div className="p-4 bg-card-bg rounded-lg">
                 <h6 className="font-semibold mb-2">Admin Credentials</h6>
                 <div className="space-y-1">
-                  <p>
-                    Email: {admin[0]}
+                  <p className="text-sm">
+                    Email: {project?.admin[0]}
                   </p>
-                  <p>
-                    Password: {admin[1]}
+                  <p className="text-sm">
+                    Password: {project?.admin[1]}
                   </p>
                 </div>
               </div>
+              }
             </div>
             <hr />
           </div>
@@ -97,17 +106,17 @@ const ProjectDetailsView = async ({ params }: ProjectDetailsViewProps) => {
                 <h5 className="font-semibold mb-3 border-l-4 border-highlight pl-4">
                   Overview
                 </h5>
-                <p className="pt-2">{description}</p>
+                <p className="pt-2">{project?.description}</p>
               </div>
 
               {/* Technologies Used Section */}
-              {technologies?.length > 0 && (
+              {project?.technologies?.length > 0 && (
                 <div>
                   <h5 className="font-semibold mb-3 border-l-4 border-highlight pl-4">
                     Technologies Used
                   </h5>
                   <div className="flex flex-wrap gap-4 pt-2">
-                    {technologies.map((tech, index) => (
+                    {project?.technologies.map((tech, index) => (
                       <span
                         key={index}
                         className="px-4 py-1 shadow-sm border-t border-highlight shadow-highlight rounded-full text-sm"
@@ -120,13 +129,13 @@ const ProjectDetailsView = async ({ params }: ProjectDetailsViewProps) => {
               )}
 
               {/* Features Section */}
-              {features?.length > 0 && (
+              {project?.features?.length > 0 && (
                 <div>
                   <h5 className="font-semibold mb-3 border-l-4 border-highlight pl-4">
                     Features ✨
                   </h5>
                   <ul className="list-disc list-inside space-y-2 pl-6 pt-2 text-secondary text-base md:text-lg leading-relaxed">
-                    {features.map((feature, index) => (
+                    {project?.features.map((feature, index) => (
                       <li key={index}>{feature}</li>
                     ))}
                   </ul>
@@ -134,13 +143,13 @@ const ProjectDetailsView = async ({ params }: ProjectDetailsViewProps) => {
               )}
 
               {/* Challenges Section */}
-              {challenges?.length > 0 && (
+              {project?.challenges?.length > 0 && (
                 <div>
                   <h5 className="font-semibold mb-3 border-l-4 border-highlight pl-4">
                     Challenges
                   </h5>
                   <ul className="list-disc list-inside space-y-2 pl-6 pt-2 text-secondary text-base md:text-lg leading-relaxed">
-                    {challenges.map((challenge, index) => (
+                    {project?.challenges.map((challenge, index) => (
                       <li key={index}>{challenge}</li>
                     ))}
                   </ul>
@@ -150,8 +159,8 @@ const ProjectDetailsView = async ({ params }: ProjectDetailsViewProps) => {
 
             <div className="">
               <Image
-                src={img[0]}
-                alt={title}
+                src={project?.img[0]}
+                alt={project?.title}
                 width={800}
                 height={450}
                 className="rounded-lg"

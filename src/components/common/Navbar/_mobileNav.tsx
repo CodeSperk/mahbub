@@ -58,7 +58,7 @@ const MobileNav = () => {
             isDrawerOpen ? "translate-x-0" : "-translate-x-full"
           } overflow-y-auto scroll-smooth`}
         >
-          <div className="flex justify-between items-center p-4 border-b border-gray-700">
+          <div className="flex justify-between items-center p-4 border-b border-[#300f2d]">
             <h3 className="text-highlight text-lg uppercase">Mahbub</h3>
             <button onClick={toggleDrawer} aria-label="Close Menu">
               <IoMdClose className="text-2xl" />

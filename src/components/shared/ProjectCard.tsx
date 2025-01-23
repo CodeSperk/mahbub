@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Project } from "@/Pages/Portfolio/__helper";
+import { p } from "framer-motion/client";
 
 const ProjectCard = ({ project }: { project: Project }) => {
   if (!project) return null;
@@ -43,9 +44,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
         <Link href={`/portfolio/${id}`}>
         <h4 className="hover:text-highlight">{title}</h4>
         </Link>
-        <p>
-          Charity/ Fund Rising / Non profit
-        </p>
+       <p> {project?.category}</p>
       </div>
     </div>
   );
