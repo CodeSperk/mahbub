@@ -10,5 +10,5 @@ export type Project = {
   liveLink: string;
   img: string[];
   technologies: string[];
-  admin: [string, string];
+  admin?: [string, string];
 };
