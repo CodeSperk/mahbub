@@ -5,7 +5,6 @@ import { Project } from "@/Pages/Portfolio/__helper";
 const ProjectCard = ({ project }: { project: Project }) => {
   if (!project) return null;
   const { id, img, title } = project;
-
   return (
     <div
       className="flex flex-col gap-8  justify-start shadow-md shadow-button"

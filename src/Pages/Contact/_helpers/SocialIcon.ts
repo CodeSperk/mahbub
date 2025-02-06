@@ -7,11 +7,11 @@ export type SocialP = {
 
 export const socialIcon : SocialP[] =[
   {
-    href: "Phone:",
+    href: "https://www.linkedin.com/in/mahbub692",
     icon: FaLinkedinIn
   },
   {
-    href: "Email:",
+    href: "https://github.com/CodeSperk",
     icon: FaGithub
   },
   {
